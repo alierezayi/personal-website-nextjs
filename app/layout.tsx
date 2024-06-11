@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Header from "@/containers/templates/header";
 import Footer from "@/containers/templates/footer";
-import "../styles/globals.css";
 import { cn } from "@/lib/utils";
+import "../styles/globals.css";
+import Provider from "./provider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -25,13 +26,15 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen container bg-gray-900 text-white font-light text-base",
+          "min-h-screen container font-light text-base",
           poppins.className
         )}
       >
-        <Header />
-        {children}
-        <Footer />
+        <Provider>
+          <Header />
+          {children}
+          <Footer />
+        </Provider>
       </body>
     </html>
   );
