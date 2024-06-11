@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { cn } from "@/lib/utils";
 import Header from "@/containers/templates/header";
 import Footer from "@/containers/templates/footer";
-import { cn } from "@/lib/utils";
-import "../styles/globals.css";
 import Provider from "./provider";
+import "../styles/globals.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,7 +26,8 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen container font-light text-base",
+          "min-h-screen mx-auto font-light text-base px-5",
+          "sm:max-w-xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl",
           poppins.className
         )}
       >
