@@ -1,5 +1,13 @@
+"use client";
+
+import { useSectionInView } from "@/hooks/useSectionInView";
+
 export default function Skills() {
+  const { ref } = useSectionInView("Skills");
+  
   return (
-    <div>skills</div>
-  )
+    <section ref={ref} id="skills" className="min-h-screen">
+      skills
+    </section>
+  );
 }

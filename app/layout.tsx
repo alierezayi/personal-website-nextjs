@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen mx-auto font-light text-base px-5",
+          "min-h-screen mx-auto text-base px-5",
           "sm:max-w-xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl",
           poppins.className
         )}

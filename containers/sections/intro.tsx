@@ -1,9 +1,13 @@
-import { ModeToggle } from "@/components/modules/mode-toggle";
+"use client";
+
+import { useSectionInView } from "@/hooks/useSectionInView";
 
 export default function Intro() {
+  const { ref } = useSectionInView("Home", 0.5);
+
   return (
-    <div>
-      <ModeToggle />
-    </div>
+    <section ref={ref} id="home" className="min-h-screen">
+      Intro
+    </section>
   );
 }
