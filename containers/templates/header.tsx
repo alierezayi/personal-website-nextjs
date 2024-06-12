@@ -1,7 +1,11 @@
+import { ModeToggle } from "@/components/modules/mode-toggle";
+
 function Header() {
   return (
-    <header>header</header>
-  )
+    <header>
+      <ModeToggle />
+    </header>
+  );
 }
 
-export default Header
+export default Header;
