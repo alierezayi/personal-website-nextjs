@@ -3,7 +3,10 @@ import { skills } from "./skills";
 
 const IMAGES = {
   header: {
-    logo: require("@/assets/images/main/ali-logo.png"),
+    logo: {
+      light: require("@/assets/images/main/ali-logo.png"),
+      dark: require("@/assets/images/main/ali-logo-dark.png"),
+    },
   },
   sections: {
     intro: {

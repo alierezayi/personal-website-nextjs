@@ -1,6 +1,6 @@
 "use client";
 
-import BgGrid from "@/components/ui/bg-grid";
+import BgDot from "@/components/ui/bg-dot";
 import { useSectionInView } from "@/hooks/useSectionInView";
 
 export default function Intro() {
@@ -8,7 +8,7 @@ export default function Intro() {
 
   return (
     <section ref={ref} id="home" className="relative min-h-screen">
-      <BgGrid />
+      <BgDot />
     </section>
   );
 }
