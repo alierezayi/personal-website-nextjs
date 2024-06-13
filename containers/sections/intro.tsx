@@ -7,7 +7,7 @@ export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
 
   return (
-    <section ref={ref} id="home" className="relative min-h-screen">
+    <section ref={ref} id="home" className="relative min-h-screen -scroll-mt-20">
       <BgDot />
     </section>
   );

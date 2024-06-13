@@ -39,4 +39,4 @@ export const LINKS = [
     hash: "#contact",
     icon: React.createElement(HiEnvelope),
   },
-] as const;
+];

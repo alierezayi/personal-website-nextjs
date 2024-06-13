@@ -5,6 +5,8 @@ import Header from "@/containers/templates/header";
 import Footer from "@/containers/templates/footer";
 import Provider from "./provider";
 import "../styles/globals.css";
+import { FloatingNav } from "@/components/templates/floating-navbar";
+import { LINKS } from "@/constants/refrences/links";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,12 +28,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen mx-auto text-sm px-5",
-          "sm:max-w-xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl",
+          "min-h-screen mx-auto text-sm px-5 sm:max-w-xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl",
           poppins.className
         )}
       >
         <Provider>
+          <FloatingNav />
           <Header />
           {children}
           <Footer />
