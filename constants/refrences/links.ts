@@ -1,42 +1,42 @@
 import React from "react";
 import {
-  HiHome,
-  HiUser,
-  HiViewColumns,
-  HiRectangleGroup,
-  HiEnvelope,
-} from "react-icons/hi2";
-import { MdWork } from "react-icons/md";
+  BriefcaseBusiness,
+  Home,
+  Mail,
+  PanelsTopLeft,
+  SquareGanttChart,
+  UserRound,
+} from "lucide-react";
 
 export const LINKS = [
   {
     name: "Home",
     hash: "#home",
-    icon: React.createElement(HiHome),
+    icon: React.createElement(Home),
   },
   {
     name: "About",
     hash: "#about",
-    icon: React.createElement(HiUser),
+    icon: React.createElement(UserRound),
   },
   {
     name: "Skills",
     hash: "#skills",
-    icon: React.createElement(HiRectangleGroup),
+    icon: React.createElement(SquareGanttChart),
   },
   {
     name: "Projects",
     hash: "#projects",
-    icon: React.createElement(HiViewColumns),
+    icon: React.createElement(PanelsTopLeft),
   },
   {
     name: "Experience",
     hash: "#experience",
-    icon: React.createElement(MdWork),
+    icon: React.createElement(BriefcaseBusiness),
   },
   {
     name: "Contact",
     hash: "#contact",
-    icon: React.createElement(HiEnvelope),
+    icon: React.createElement(Mail),
   },
 ];

@@ -1,8 +1,8 @@
 export default function BgDot() {
   return (
     <div
-      className="h-screen w-full dark:bg-slate-950 bg-white  dark:bg-dot-white/[0.2]
-       bg-dot-black/[0.2] relative flex items-center justify-center"
+      className="h-full w-full dark:bg-slate-950 bg-white -z-10 dark:bg-dot-white/[0.2]
+       bg-dot-black/[0.2] absolute flex items-center justify-center"
     >
       <div
         className="absolute pointer-events-none inset-0 flex

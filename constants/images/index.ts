@@ -10,7 +10,8 @@ const IMAGES = {
   },
   sections: {
     intro: {
-      picture: require("@/assets/images/main/alirezayi-mobile.jpg"),
+      picture: require("@/assets/images/main/alirezayi.jpg"),
+      scroll: require("@/assets/images/main/scroll.svg"),
     },
     about: {
       programLogos: require("@/assets/images/main/mainIconsdark.svg"),

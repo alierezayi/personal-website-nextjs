@@ -1,10 +1,21 @@
 import React from "react";
 import { LiaTelegramPlane } from "react-icons/lia";
+import { LuGithub } from "react-icons/lu";
 import { MdOutlineWhatsapp } from "react-icons/md";
 import { RiInstagramLine, RiLinkedinLine } from "react-icons/ri";
 import { RxDiscordLogo } from "react-icons/rx";
 
 export const SOCIALS = [
+  {
+    name: "instagram",
+    icon: React.createElement(RiInstagramLine),
+    href: "https://instagram.com/ali._rezaayi",
+  },
+  {
+    name: "github",
+    icon: React.createElement(LuGithub),
+    href: "https://github.com/alierezayi",
+  },
   {
     name: "telegram",
     icon: React.createElement(LiaTelegramPlane),
@@ -19,11 +30,6 @@ export const SOCIALS = [
     name: "discord",
     icon: React.createElement(RxDiscordLogo),
     href: "https://discordapp.com/users/yourID/alirezayi",
-  },
-  {
-    name: "instagram",
-    icon: React.createElement(RiInstagramLine),
-    href: "https://instagram.com/ali._rezaayi",
   },
   {
     name: "whatsapp",

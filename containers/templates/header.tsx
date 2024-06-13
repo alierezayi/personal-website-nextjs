@@ -1,10 +1,19 @@
-import Logo from "@/components/modules/logo";
-import { ModeToggle } from "@/components/modules/mode-toggle";
-import Navbar from "@/components/templates/header-navbar";
+"use client";
+
+import Logo from "@/components/templates/header/logo";
+import { ModeToggle } from "@/components/templates/header/mode-toggle";
+import Navbar from "@/components/templates/header/header-navbar";
+import { useSectionInView } from "@/hooks/useSectionInView";
 
 function Header() {
+  const { ref } = useSectionInView("Home", 0.5);
+
   return (
-    <header className="flex items-center justify-between h-20">
+    <header
+      ref={ref}
+      id="home"
+      className="flex items-center justify-between h-20"
+    >
       <Logo />
       <Navbar />
       <ModeToggle />

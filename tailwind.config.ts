@@ -24,6 +24,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        profile: "url(/alirezayi.jpg)",
+      },
       colors: {
         black: {
           DEFAULT: "#000",
@@ -80,6 +83,25 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "scroll-down": {
+          "0%": {
+            transform: "translateY(0)",
+          },
+          "30%": {
+            transform: "translateY(3.75rem)",
+          },
+        },
+        profile: {
+          "0%": {
+            borderRadius: "60% 40% 30% 70%/60% 30% 70% 40%",
+          },
+          "50%": {
+            borderRadius: "30% 60% 70% 40%/50% 60% 30% 60%",
+          },
+          "100%": {
+            borderRadius: "60% 40% 30% 70%/60% 30% 70% 40%",
+          },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -146,6 +168,8 @@ const config = {
         },
       },
       animation: {
+        "scroll-down": "scroll-down 2s ease infinite ",
+        profile: "profile 8s ease-in-out infinite 1s",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",

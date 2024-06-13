@@ -5,8 +5,7 @@ import Header from "@/containers/templates/header";
 import Footer from "@/containers/templates/footer";
 import Provider from "./provider";
 import "../styles/globals.css";
-import { FloatingNav } from "@/components/templates/floating-navbar";
-import { LINKS } from "@/constants/refrences/links";
+import { FloatingNav } from "@/components/templates/global/floating-navbar";
 
 const poppins = Poppins({
   subsets: ["latin"],
