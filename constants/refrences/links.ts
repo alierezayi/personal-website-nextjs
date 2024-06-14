@@ -12,31 +12,31 @@ export const LINKS = [
   {
     name: "Home",
     hash: "#home",
-    icon: React.createElement(Home),
+    icon: Home,
   },
   {
     name: "About",
     hash: "#about",
-    icon: React.createElement(UserRound),
+    icon: UserRound,
   },
   {
     name: "Skills",
     hash: "#skills",
-    icon: React.createElement(SquareGanttChart),
+    icon: SquareGanttChart,
   },
   {
     name: "Projects",
     hash: "#projects",
-    icon: React.createElement(PanelsTopLeft),
+    icon: PanelsTopLeft,
   },
   {
     name: "Experience",
     hash: "#experience",
-    icon: React.createElement(BriefcaseBusiness),
+    icon: BriefcaseBusiness,
   },
   {
     name: "Contact",
     hash: "#contact",
-    icon: React.createElement(Mail),
+    icon: Mail,
   },
 ];

@@ -107,3 +107,6 @@
     grid-template-columns: 0.5fr 3fr;
   }
 }
+.cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}

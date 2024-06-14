@@ -68,7 +68,7 @@ export const FloatingNav = ({ className }: { className?: string }) => {
               navItem.name === activeSection && "text-black"
             )}
           >
-            <span className="block md:hidden text-sm z-10">{navItem.icon}</span>
+            <navItem.icon className="block md:hidden z-10 w-5 h-5" />
             <span className="hidden md:block z-10">{navItem.name}</span>
 
             {navItem.name === activeSection && (

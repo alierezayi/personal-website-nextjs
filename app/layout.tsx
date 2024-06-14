@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen mx-auto text-sm px-5 sm:max-w-xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl",
+          "min-h-screen mx-auto text-sm px-5 sm:max-w-xl md:max-w-4xl lg:max-w-5xl",
           poppins.className
         )}
       >

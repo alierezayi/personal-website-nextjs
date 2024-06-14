@@ -1,3 +1,4 @@
+import { SectionDivider } from "@/components/sections";
 import About from "@/containers/sections/about";
 import Contact from "@/containers/sections/contact";
 import Experience from "@/containers/sections/experience";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <main>
       <Intro />
+      <SectionDivider />
       <About />
       <Skills />
       <Projects />

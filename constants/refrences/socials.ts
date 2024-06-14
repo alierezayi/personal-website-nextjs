@@ -12,11 +12,6 @@ export const SOCIALS = [
     href: "https://instagram.com/ali._rezaayi",
   },
   {
-    name: "github",
-    icon: React.createElement(LuGithub),
-    href: "https://github.com/alierezayi",
-  },
-  {
     name: "telegram",
     icon: React.createElement(LiaTelegramPlane),
     href: "https://t.me/ali_rezaayi",

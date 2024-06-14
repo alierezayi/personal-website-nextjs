@@ -1,13 +1,14 @@
-"use client";
-
-import { useSectionInView } from "@/hooks/useSectionInView";
+import {
+  Section,
+  SectionHeading,
+  SectionSubTitle,
+} from "@/components/sections";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
-  
   return (
-    <section ref={ref} id="experience" className="min-h-screen">
-      experience
-    </section>
+    <Section name="Experience">
+      <SectionHeading>Experience</SectionHeading>
+      <SectionSubTitle>I&apo</SectionSubTitle>
+    </Section>
   );
 }
