@@ -7,19 +7,19 @@ export default function Details() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSection();
 
   return (
-    <div className="flex flex-col justify-center col-span-3 lg:col-span-1 mt-10">
+    <div className="flex flex-col justify-center items-center md:items-start col-span-3 lg:col-span-1 mt-10">
       {/* title */}
       <h1 className="text-4xl font-semibold mb-7">Ali Rezaei</h1>
       {/* subtitle */}
       <h3
-        className="relative text-xl font-medium pl-14 lg:pl-20 mb-5 lg:mb-7 before:absolute before:w-[40px]
+        className="relative text-xl font-medium pl-8 lg:pl-20 mb-7 before:absolute before:w-[20px]
                lg:before:w-[70px] before:h-0.5 before:bg-gray-300 dark:before:bg-gray-700 before:left-0
-               before:top-3 lg:before:top-4 before:rounded-full"
+               before:top-3.5 lg:before:top-4 before:rounded-full"
       >
         Front End Developer
       </h3>
       {/* description */}
-      <div className="max-w-[initial] lg:max-w-[400px] mb-10 lg:mb-12 text-neutral-500 dark:text-gray-300">
+      <div className="w-full text-center md:text-start lg:max-w-[400px] mb-10 lg:mb-12 text-neutral-500 dark:text-gray-300">
         <TextGenerateEffect
           words="I am a crative Front End Developer based in Iran, Kerman with a
            passion for creating web apps and dedicated to my work."
