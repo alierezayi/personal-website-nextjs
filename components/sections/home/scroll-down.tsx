@@ -8,18 +8,18 @@ export default function ScrollDown() {
   const { theme } = useTheme();
 
   return (
-    <div>
+    <div className="flex justify-center lg:justify-start">
       <Link
         href="#about"
         onClick={() => {
           setActiveSection("About");
           setTimeOfLastClick(Date.now());
         }}
-        className="hidden lg:flex items-center gap-2 ml-28 lg:ml-0"
+        className="flex items-center gap-2"
       >
         <svg
-          width="32px"
-          height="32px"
+          width="28px"
+          height="28px"
           className="home__scroll-mouse"
           viewBox="0 0 247 390"
           version="1.1"

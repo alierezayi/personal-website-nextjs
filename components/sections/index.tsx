@@ -40,18 +40,19 @@ function SectionHeading({ children, className }: SectionHeadingProps) {
 
 function SectionSubTitle({ children, className }: SectionHeadingProps) {
   return (
-    <h3 className={cn("text-neutral-500 dark:text-gray-500 text-center text-xs mb-20", className)}>
+    <h3
+      className={cn(
+        "text-neutral-500 dark:text-gray-500 text-center text-xs mb-12 md:mb-20",
+        className
+      )}
+    >
       {children}
     </h3>
   );
 }
 
 function SectionContent({ children, className }: SectionHeadingProps) {
-  return (
-    <div className={cn("", className)}>
-      {children}
-    </div>
-  );
+  return <div className={cn("", className)}>{children}</div>;
 }
 
 function SectionDivider() {

@@ -19,7 +19,7 @@ export default function Intro() {
   }
 
   return (
-    <section className="relative lg:min-h-[560px] lg:h-[calc(100vh-80px)] lg:max-h-[620px]">
+    <section className="relative lg:min-h-[560px] lg:h-[calc(100vh-80px)] lg:max-h-[620px] pb-20">
       <BgDot />
       <div className="z-0 flex flex-col gap-16 lg:gap-24 ">
         <div className="grid custom-grid gap-x-5 lg:gap-x-8 pt-16 lg:pt-28">
