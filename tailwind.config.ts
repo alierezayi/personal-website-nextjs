@@ -26,6 +26,7 @@ const config = {
     extend: {
       backgroundImage: {
         profile: "url(/alirezayi.jpg)",
+        laptop: "url('/b1.svg')",
       },
       colors: {
         black: {

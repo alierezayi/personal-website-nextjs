@@ -8,9 +8,9 @@ import {
   SectionHeading,
   SectionSubTitle,
 } from "@/components/sections";
-import Info from "@/components/sections/about/info";
 import Link from "next/link";
 import { FileText, Github } from "lucide-react";
+import Info from "@/components/sections/about/info";
 
 export default function About() {
   return (

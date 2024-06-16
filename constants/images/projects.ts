@@ -10,10 +10,6 @@ export const projects = {
     require("@/assets/images/projects/store-cart.png"),
     require("@/assets/images/projects/store-details.png"),
   ],
-  musicPlayer: [
-    require("@/assets/images/projects/music-player.png"),
-  ],
-  weblog: [
-    require("@/assets/images/projects/weblog.png"),
-  ],
+  musicPlayer: [require("@/assets/images/projects/music-player.png")],
+  weblog: [require("@/assets/images/projects/weblog.png")],
 };

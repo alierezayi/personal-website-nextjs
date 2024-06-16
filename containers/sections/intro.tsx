@@ -1,11 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-import BgDot from "@/components/ui/bg-dot";
-import Social from "@/components/sections/home/social";
-import ScrollDown from "@/components/sections/home/scroll-down";
-import Details from "@/components/sections/home/details";
+import { BgDot } from "@/components/ui/backgrounds";
+import Social from "@/components/sections/intro/social";
+import ScrollDown from "@/components/sections/intro/scroll-down";
+import Details from "@/components/sections/intro/details";
 
 export default function Intro() {
   const [isClient, setIsClient] = useState(false);
@@ -23,7 +22,6 @@ export default function Intro() {
       <BgDot />
       <div className="z-0 flex flex-col gap-16 lg:gap-24 ">
         <div className="grid custom-grid gap-x-5 lg:gap-x-8 pt-16 lg:pt-28">
-          {/* social */}
           <Social />
           {/* profile picture */}
           <div

@@ -14,6 +14,6 @@ export const INFO = [
   {
     icon: LaptopMinimal,
     title: "Field of Work",
-    description: "Front End",
+    description: "Front-End",
   },
 ];

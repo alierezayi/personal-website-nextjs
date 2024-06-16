@@ -1,5 +1,4 @@
 import { projects } from "./projects";
-import { skills } from "./skills";
 
 const IMAGES = {
   header: {
@@ -16,7 +15,11 @@ const IMAGES = {
     about: {
       programLogos: require("@/assets/images/main/mainIconsdark.svg"),
     },
-    skills,
+    skills: {
+      js: require("@/assets/images/main/javascript.svg"),
+      ts: require("@/assets/images/main/typescript.svg"),
+      react: require("@/assets/images/main/react.png"),
+    },
     projects,
   },
 };

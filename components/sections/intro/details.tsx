@@ -16,12 +16,12 @@ export default function Details() {
                lg:before:w-[70px] before:h-0.5 before:bg-gray-300 dark:before:bg-gray-700 before:left-0
                before:top-3.5 lg:before:top-4 before:rounded-full"
       >
-        Front End Developer
+        Web Developer
       </h3>
       {/* description */}
       <div className="w-full text-center md:text-start lg:max-w-[400px] mb-10 lg:mb-12 text-neutral-500 dark:text-gray-300">
         <TextGenerateEffect
-          words="I am a crative Front End Developer based in Iran, Kerman with a
+          words="I am a crative Web designer based in Iran with a
            passion for creating web apps and dedicated to my work."
         />
       </div>
