@@ -51,7 +51,7 @@ export const FloatingNav = ({ className }: { className?: string }) => {
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit fixed top-5 inset-x-0 mx-auto border border-slate-200/50 dark:border-slate-800/50 rounded-full dark:bg-gray-900/80 bg-slate-100/80 z-[5000] items-center justify-center gap-5 md:gap-0 py-1.5 px-2 backdrop-blur",
+          "flex max-w-fit fixed top-5 inset-x-0 mx-auto border border-slate-200/50 dark:border-slate-800/50 rounded-full dark:bg-gray-800/80 bg-gray-200/70 z-[5000] items-center justify-center gap-5 md:gap-0 py-1 px-1.5 backdrop-blur",
           className
         )}
       >
@@ -64,7 +64,7 @@ export const FloatingNav = ({ className }: { className?: string }) => {
               setTimeOfLastClick(Date.now());
             }}
             className={cn(
-              "relative dark:text-white items-center flex text-neutral-700 dark:hover:text-neutral-300 hover:text-neutral-500 p-2 md:py-1.5 md:px-3",
+              "relative dark:text-white items-center flex text-neutral-700 dark:hover:text-neutral-300 hover:text-neutral-500 p-2 md:py-[9px] md:px-4",
               navItem.name === activeSection && "text-black"
             )}
           >
@@ -73,7 +73,7 @@ export const FloatingNav = ({ className }: { className?: string }) => {
 
             {navItem.name === activeSection && (
               <motion.span
-                className="rounded-full absolute inset-0 z-0 border border-slate-300/50 bg-slate-200/70 dark:bg-gray-800/70 dark:border-gray-700/50"
+                className="rounded-full absolute inset-0 z-0 border border-slate-300/50 bg-white/70 dark:bg-slate-950/80 dark:border-gray-800/50"
                 layoutId="activeSection"
                 transition={{
                   type: "spring",

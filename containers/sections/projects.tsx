@@ -34,12 +34,7 @@ export default function Projects() {
         <BentoGrid className="relative">
           <BgGridSmall />
           {displayed.map((item, i) => (
-            <BentoGridItem
-              key={i}
-              title={item.title}
-              image={item.images[0]}
-              icon={<item.icon />}
-            />
+            <BentoGridItem key={i} {...item} />
           ))}
         </BentoGrid>
       </SectionContent>

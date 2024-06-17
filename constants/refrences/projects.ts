@@ -11,7 +11,7 @@ const vercelUrl = (name: string) => `https://${name}-alirezayi.vercel.app`;
 
 export const PROJECTS: ProjectType[] = [
   {
-    title: "Store (Shopping cart) - react.js",
+    title: "Shopping cart",
     tag: "react",
     icon: RiReactjsLine,
     tecnologies: [
@@ -38,7 +38,7 @@ export const PROJECTS: ProjectType[] = [
     source: `${BASE_GITHUB_URL}/store-rjs`,
   },
   {
-    title: "Divar clone (authorization and authentication) - react.js",
+    title: "Divar clone",
     tag: "react",
     icon: RiReactjsLine,
     tecnologies: ["JavaScript", "React", "Tailwind", "React Query", "Axios"],
@@ -55,7 +55,7 @@ export const PROJECTS: ProjectType[] = [
     source: `${BASE_GITHUB_URL}/authentication-authorization-rjs`,
   },
   {
-    title: "Weblog - next.js",
+    title: "Weblog",
     tag: "next",
     icon: RiNextjsLine,
     tecnologies: [
@@ -79,7 +79,7 @@ export const PROJECTS: ProjectType[] = [
     source: `${BASE_GITHUB_URL}/weblog-next.js`,
   },
   {
-    title: "Music player - next.js",
+    title: "Music player",
     tag: "next",
     icon: RiNextjsLine,
 

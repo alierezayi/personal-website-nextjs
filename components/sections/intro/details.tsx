@@ -7,7 +7,7 @@ export default function Details() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSection();
 
   return (
-    <div className="flex flex-col justify-center items-center md:items-start col-span-3 lg:col-span-1 mt-10">
+    <div className="flex flex-col justify-center items-center lg:items-start col-span-3 lg:col-span-1 mt-10">
       {/* title */}
       <h1 className="text-4xl font-semibold mb-7">Ali Rezaei</h1>
       {/* subtitle */}

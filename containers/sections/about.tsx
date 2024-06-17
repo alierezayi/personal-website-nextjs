@@ -17,7 +17,7 @@ export default function About() {
     <Section name="About">
       <SectionHeading>About Me</SectionHeading>
       <SectionSubTitle>My introduction</SectionSubTitle>
-      <SectionContent className="flex flex-col lg:flex-row items-center lg:items-start gap-y-10 justify-between">
+      <SectionContent className="flex flex-col md:flex-row items-center md:items-start gap-10 justify-between">
         <Image
           src={IMAGES.sections.intro.picture}
           className="rounded-2xl"

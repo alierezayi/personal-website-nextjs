@@ -110,3 +110,19 @@
 .cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+
+.scrollbar::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  @apply bg-gray-200 dark:bg-gray-800;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-gray-600 rounded;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500 dark:bg-gray-700;
+}

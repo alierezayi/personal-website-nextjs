@@ -25,7 +25,7 @@ export default function Intro() {
           <Social />
           {/* profile picture */}
           <div
-            className="ml-7 sm:ml-0 md:-ml-10 lg:ml-16 w-[200px] h-[200px] md:w-[250px] md:h-[250px]
+            className="ml-7 sm:ml-20 md:ml-28 lg:ml-16 w-[200px] h-[200px] md:w-[250px] md:h-[250px]
              lg:w-[300px] lg:h-[300px] bg-profile bg-no-repeat bg-center bg-cover shadow order-[initial]
              justify-self-start lg:order-1 lg:justify-self-center animate-profile custom-box-shadow"
           />

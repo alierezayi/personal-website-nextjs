@@ -15,27 +15,21 @@ export default function Skills() {
       <SectionHeading>Skills</SectionHeading>
       <SectionSubTitle>My technical level</SectionSubTitle>
       <SectionContent className="flex flex-col lg:flex-row gap-10 h-fit">
-        <div className="flex-1 flex flex-col gap-10">
-          {/* front end */}
-          <SkillList title="Frontend development">
-            {SKILLS.frontend.map((item) => (
-              <SkillItem key={item} item={item} />
-            ))}
-          </SkillList>
-          {/* <LanguageBox /> */}
-        </div>
-        <div className="flex-1 flex flex-col gap-10">
-          {/* <CodingBox /> */}
-          {/* back end */}
-          <SkillList
-            title="Backend development"
-            className="h-[300px] md:h-[542px]"
-          >
-            <p className="text-neutral-700 dark:text-gray-400">
-              No item here yet. 🎯
-            </p>
-          </SkillList>
-        </div>
+        {/* front end */}
+        <SkillList title="Frontend development" className="flex-1">
+          {SKILLS.frontend.map((item) => (
+            <SkillItem key={item} item={item} />
+          ))}
+        </SkillList>
+        {/* back end */}
+        <SkillList
+          title="Backend development"
+          className="flex-1 hidden lg:block"
+        >
+          <p className="text-neutral-700 dark:text-gray-400">
+            No item here yet. 🎯
+          </p>
+        </SkillList>
       </SectionContent>
     </Section>
   );

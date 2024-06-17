@@ -11,7 +11,7 @@ export default function HeaderNavbar() {
 
   return (
     <nav className="hidden md:flex flex-1 justify-center">
-      <ul className="flex items-center gap-5 w-fit">
+      <ul className="flex items-center gap-7 w-fit">
         {LINKS.map((link, i) => (
           <Link
             key={i}
