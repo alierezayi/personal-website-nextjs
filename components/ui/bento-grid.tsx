@@ -73,7 +73,7 @@ export const BentoGridItem = ({
           {item.description}
         </div>
         <ProjectDialog data={item}>
-          <button className="flex items-center gap-1 text-xs text-neutral-600 dark:text-gray-400 hover:translate-x-2 transition duration-500">
+          <button className="flex items-center gap-1 text-xs text-neutral-500 dark:text-gray-400 hover:translate-x-2 transition duration-500">
             Show details
             <ArrowRight className="w-3" />
           </button>

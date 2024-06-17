@@ -29,7 +29,7 @@ export default function ProjectDialog({
           </div>
           <div className="flex flex-col gap-2">
             <div>Features</div>
-            <ul className="flex flex-col gap-1.5 text-neutral-500 dark:text-gray-400">
+            <ul className="flex flex-col gap-1.5 text-neutral-500 dark:text-gray-300">
               {data.features.map((feature, i) => (
                 <li key={i} className="flex items-center">
                   <CircleCheck className="w-3.5 mr-2" />

@@ -18,8 +18,8 @@ export function SkillList({ title, children, className }: SkillListType) {
 
 export function SkillItem({ item }: { item: string }) {
   return (
-    <div className="flex gap-1 items-center font-medium">
-      <CircleCheck className="w-4" />
+    <div className="flex gap-1 items-center">
+      <CircleCheck className="w-3.5" />
       <span>{item}</span>
     </div>
   );
