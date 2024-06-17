@@ -19,7 +19,7 @@ export default function Details() {
         Web Developer
       </h3>
       {/* description */}
-      <div className="w-full text-center md:text-start lg:max-w-[400px] mb-10 lg:mb-12 text-neutral-500 dark:text-gray-300">
+      <div className="w-full text-center md:text-start lg:max-w-[400px] mb-10 lg:mb-12 text-neutral-500 dark:text-gray-400">
         <TextGenerateEffect
           words="I am a crative Web designer based in Iran with a
            passion for creating web apps and dedicated to my work."

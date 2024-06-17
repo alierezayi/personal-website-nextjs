@@ -46,28 +46,30 @@ export const BentoGridItem = ({
         className
       )}
     >
-      <div className="h-fit w-full p-2 rounded-xl bg-gradient-to-br from-pink-700 to-blue-600 relative group cursor-pointer">
-        <div className="absolute inset-0 rounded-xl bg-transparent group-hover:backdrop-blur-md transition duration-300 easin flex justify-center items-center">
-          <button className="opacity-0 group-hover:opacity-100 transition p-1 rounded-full border border-neutral-500">
-            <IoIosExpand className="w-6 h-6 text-neutral-500 font-medium" />
-          </button>
+      <ProjectDialog data={item}>
+        <div className="h-fit w-full p-2 rounded-xl bg-gradient-to-br from-pink-700 to-blue-600 relative group cursor-pointer">
+          <div className="absolute inset-0 rounded-xl bg-transparent group-hover:backdrop-blur-md transition duration-300 easin flex justify-center items-center">
+            <button className="opacity-0 group-hover:opacity-100 transition p-1 rounded-full border border-neutral-500">
+              <IoIosExpand className="w-6 h-6 text-neutral-500 font-medium" />
+            </button>
+          </div>
+          <Image
+            src={item.images[0]}
+            alt={item.title}
+            width={500}
+            height={300}
+            className="rounded-lg border-gray-200"
+          />
         </div>
-        <Image
-          src={item.images[0]}
-          alt={item.title}
-          width={500}
-          height={300}
-          className="rounded-lg border-gray-200"
-        />
-      </div>
+      </ProjectDialog>
       <div className="transition duration-200">
-        <span className="">
-          <item.icon />
+        <span className="text-neutral-600 dark:text-gray-400">
+          <item.icon className="w-5 h-5" />
         </span>
-        <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2 truncate">
+        <div className="font-semibold text-base text-neutral-600 dark:text-neutral-200 mb-2 mt-2 truncate">
           {item.title}
         </div>
-        <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
+        <div className="font-normal text-neutral-600 text-xs dark:text-neutral-300">
           {item.description}
         </div>
         <ProjectDialog data={item}>

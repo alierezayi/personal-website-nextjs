@@ -10,17 +10,16 @@ import { useProjectCategory } from "@/hooks/useProjectCategory";
 
 export default function Categories() {
   const [cookie, updateCookie] = useCookie("category", "all");
-  const { update } = useProjectCategory();
-  const [category, setCategory] = useState<ProjectCategoryType>("all");
+  const { category, setCategory } = useProjectCategory();
 
   useEffect(() => {
     setCategory(cookie);
+    updateCategory(cookie);
   }, [cookie]);
 
   const updateCategory = (cat: ProjectCategoryType) => {
     setCategory(cat);
     updateCookie(cat);
-    update(cat);
   };
 
   return (

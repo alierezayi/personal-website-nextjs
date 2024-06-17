@@ -12,7 +12,7 @@ const Info = () => {
           <h1 className="text-sm font-medium">
             <span>{item.title}</span>
           </h1>
-          <div className="text-xs text-neutral-500 dark:text-gray-500">
+          <div className="text-xs text-neutral-500 dark:text-gray-400">
             {item.description}
           </div>
         </div>

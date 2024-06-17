@@ -18,7 +18,6 @@ import { useEffect, useState } from "react";
 export default function Projects() {
   const { category } = useProjectCategory();
   const [displayed, setDisplayed] = useState<ProjectType[]>(PROJECTS);
-  console.log(category);
 
   useEffect(() => {
     const newItems = filterProjects(PROJECTS, category);
