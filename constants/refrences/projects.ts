@@ -1,20 +1,27 @@
+import { ProjectCategoryType, ProjectType } from "@/lib/types";
+import { GrReactjs } from "react-icons/gr";
 import IMAGES from "../images";
+import { TbBrandNextjs } from "react-icons/tb";
+import { RiNextjsLine, RiReactjsLine } from "react-icons/ri";
+import { LiaReact } from "react-icons/lia";
 
 const BASE_GITHUB_URL = "https://github.com/alierezayi";
 
 const vercelUrl = (name: string) => `https://${name}-alirezayi.vercel.app`;
 
-export const PROJECTS = [
+export const PROJECTS: ProjectType[] = [
   {
     title: "Store (Shopping cart) - react.js",
-    tags: [
+    tag: "react",
+    icon: RiReactjsLine,
+    tecnologies: [
       "TypeScript",
       "React",
       "Tailwind",
       "Shadcn/ui",
       "Redux",
       "Axios",
-      "Context",
+      "Context Api",
     ],
     images: IMAGES.sections.projects.store,
     description: "",
@@ -32,7 +39,9 @@ export const PROJECTS = [
   },
   {
     title: "Divar clone (authorization and authentication) - react.js",
-    tags: ["JavaScript", "React", "Tailwind", "React Query", "Axios"],
+    tag: "react",
+    icon: RiReactjsLine,
+    tecnologies: ["JavaScript", "React", "Tailwind", "React Query", "Axios"],
     images: IMAGES.sections.projects.divar,
     description: "",
     features: [
@@ -47,7 +56,16 @@ export const PROJECTS = [
   },
   {
     title: "Weblog - next.js",
-    tags: ["TypeScript", "Next.js", "Tailwind", "Prisma", "MongoDB", "Swr"],
+    tag: "next",
+    icon: RiNextjsLine,
+    tecnologies: [
+      "TypeScript",
+      "Next.js",
+      "Tailwind",
+      "Prisma",
+      "MongoDB",
+      "Swr",
+    ],
     images: IMAGES.sections.projects.weblog,
     description: "",
     features: [
@@ -62,7 +80,10 @@ export const PROJECTS = [
   },
   {
     title: "Music player - next.js",
-    tags: [
+    tag: "next",
+    icon: RiNextjsLine,
+
+    tecnologies: [
       "React",
       "TypeScript",
       "Next.js",
@@ -82,4 +103,6 @@ export const PROJECTS = [
     deployment: vercelUrl("music-player-next.js"),
     source: `${BASE_GITHUB_URL}/music-player-next.js`,
   },
-] as const;
+];
+
+export const CATEGORIES: Array<ProjectCategoryType> = ["all", "react", "next"];

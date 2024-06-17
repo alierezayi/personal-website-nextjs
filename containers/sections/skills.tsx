@@ -5,7 +5,6 @@ import {
   SectionSubTitle,
 } from "@/components/sections";
 import { SkillItem, SkillList } from "@/components/sections/skills/skill-list";
-import { BgGridSmall } from "@/components/ui/backgrounds";
 import { SKILLS } from "@/constants/refrences/skills";
 import LanguageBox from "@/components/sections/skills/language-box";
 import CodingBox from "@/components/sections/skills/coding-box";
@@ -23,13 +22,18 @@ export default function Skills() {
               <SkillItem key={item} item={item} />
             ))}
           </SkillList>
-          <LanguageBox />
+          {/* <LanguageBox /> */}
         </div>
         <div className="flex-1 flex flex-col gap-10">
-          <CodingBox />
+          {/* <CodingBox /> */}
           {/* back end */}
-          <SkillList title="Backend development" className="h-[300px] md:h-[542px]">
-            <p className="text-neutral-700 dark:text-gray-400">No item here yet. 🎯</p>
+          <SkillList
+            title="Backend development"
+            className="h-[300px] md:h-[542px]"
+          >
+            <p className="text-neutral-700 dark:text-gray-400">
+              No item here yet. 🎯
+            </p>
           </SkillList>
         </div>
       </SectionContent>

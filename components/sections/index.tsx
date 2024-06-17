@@ -11,7 +11,7 @@ type SectionType = {
   className?: string;
 };
 
-type SectionHeadingProps = {
+type SectionHeadingType = {
   children: React.ReactNode;
   className?: string;
 };
@@ -30,7 +30,7 @@ function Section({ children, name, className }: SectionType) {
   );
 }
 
-function SectionHeading({ children, className }: SectionHeadingProps) {
+function SectionHeading({ children, className }: SectionHeadingType) {
   return (
     <h1 className={cn("text-2xl font-medium text-center", className)}>
       {children}
@@ -38,7 +38,7 @@ function SectionHeading({ children, className }: SectionHeadingProps) {
   );
 }
 
-function SectionSubTitle({ children, className }: SectionHeadingProps) {
+function SectionSubTitle({ children, className }: SectionHeadingType) {
   return (
     <h3
       className={cn(
@@ -51,7 +51,7 @@ function SectionSubTitle({ children, className }: SectionHeadingProps) {
   );
 }
 
-function SectionContent({ children, className }: SectionHeadingProps) {
+function SectionContent({ children, className }: SectionHeadingType) {
   return <div className={cn("", className)}>{children}</div>;
 }
 
