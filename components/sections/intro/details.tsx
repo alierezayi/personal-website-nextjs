@@ -25,7 +25,7 @@ export default function Details() {
            passion for creating web apps and dedicated to my work."
         />
       </div>
-      {/* go to contact link */}
+      {/* go to contact */}
       <Link
         href="#contact"
         onClick={() => {

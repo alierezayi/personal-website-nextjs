@@ -19,7 +19,7 @@ export default function ProjectDialog({
       <DialogContent className="sm:max-w-2xl h-screen md:max-h-[650px] overflow-y-auto py-12 sm:p-20 scrollbar">
         <div className="flex flex-col gap-7">
           <ImageCarousel images={data.images} />
-          <h1 className="text-lg font-medium">{data.title}</h1>
+          <h1 className="text-xl font-medium">{data.title}</h1>
           <div className="flex flex-wrap gap-2">
             {data.tecnologies.map((tech) => (
               <Badge key={tech} variant="outline">
@@ -28,7 +28,7 @@ export default function ProjectDialog({
             ))}
           </div>
           <div className="flex flex-col gap-2">
-            <div>Features</div>
+            <div className="text-base">Features</div>
             <ul className="flex flex-col gap-1.5 text-neutral-500 dark:text-gray-300">
               {data.features.map((feature, i) => (
                 <li key={i} className="flex items-center">
@@ -39,25 +39,25 @@ export default function ProjectDialog({
             </ul>
           </div>
           <div className="flex flex-col gap-2">
-            <div>Deployment</div>
+            <div className="text-base">Deployment</div>
             <Link
               href={data.deployment}
-              className="flex items-center gap-1 text-neutral-500 dark:text-gray-400"
+              className="flex items-center gap-2 text-neutral-500 dark:text-gray-400"
             >
               <Globe className="w-3.5" />
-              <div className="truncate max-w-[250px] md:max-w-fit text-xs">
+              <div className="truncate max-w-[250px] md:max-w-fit">
                 {data.deployment}
               </div>
             </Link>
           </div>
           <div className="flex flex-col gap-2">
-            <div>Source</div>
+            <div className="text-base">Source</div>
             <Link
               href={data.source}
-              className="flex items-center gap-1 text-neutral-500 dark:text-gray-400"
+              className="flex items-center gap-2 text-neutral-500 dark:text-gray-400"
             >
               <Github className="w-3.5" />
-              <div className="truncate max-w-[250px] md:max-w-fit text-xs">
+              <div className="truncate max-w-[250px] md:max-w-fit">
                 {data.source}
               </div>
             </Link>

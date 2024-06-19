@@ -17,18 +17,21 @@ import "react-vertical-timeline-component/style.min.css";
 
 export default function Experience() {
   const { theme } = useTheme();
+
   return (
     <Section name="Experience">
       <SectionHeading>Experience</SectionHeading>
-      <SectionSubTitle className="">My personal qualification</SectionSubTitle>
+      <SectionSubTitle className="bg-whi">
+        My personal qualification
+      </SectionSubTitle>
       <SectionContent>
-        <VerticalTimeline lineColor="#e5e7eb3e">
+        <VerticalTimeline lineColor={theme === "dark" ? "#374151" : "#e5e7eb"}>
           {EXPERIENCES.map((experience, i) => (
             <React.Fragment key={i}>
               {experience.title ? (
                 <VerticalTimelineElement
                   contentStyle={{
-                    background: theme === "dark" ? "#020617" : "#fffff",
+                    background: theme === "dark" ? "#020617" : "#ffffff",
                     border:
                       theme === "dark"
                         ? "1px solid #374151"
@@ -37,14 +40,8 @@ export default function Experience() {
                     borderRadius: "16px",
                     boxShadow: "none",
                   }}
-                  contentArrowStyle={{
-                    borderRight:
-                      theme === "dark"
-                        ? "7px solid  #020617"
-                        : "7px solid  #fffff",
-                  }}
                   iconStyle={{
-                    background: theme === "dark" ? "#020617" : "#fffff",
+                    background: theme === "dark" ? "#020617" : "#ffffff",
                     fontSize: "1.25rem",
                   }}
                   date={experience.date}
@@ -56,15 +53,15 @@ export default function Experience() {
                   <p className="font-normal !mt-1 !text-xs">
                     {experience.location}
                   </p>
-                  <p className="!mt-5 !font-normal text-neutral-600 dark:text-neutral-200">
+                  <p className="!mt-5 !text-sm !font-normal text-neutral-600 dark:text-gray-400">
                     {experience.description}
                   </p>
                 </VerticalTimelineElement>
               ) : (
                 <VerticalTimelineElement
                   iconStyle={{
-                    background: "#64748b",
-                    fontSize: "1.5rem",
+                    background: theme === "dark" ? "#020617" : "#fffff",
+                    fontSize: "1.25rem",
                   }}
                   icon={experience.icon}
                 />

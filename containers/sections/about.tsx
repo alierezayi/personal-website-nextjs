@@ -27,7 +27,7 @@ export default function About() {
         />
         <div className="w-full max-w-[520px]">
           <Info />
-          <p className="text-neutral-500 dark:text-gray-300 leading-snug tracking-wide">
+          <p className="text-neutral-500 dark:text-gray-400 leading-snug tracking-wide">
             Ali Rezaei, born in 2003. I am a Front End Developer, I created web
             pages with UI/UX user interface, I have 2 years of experience and
             many clients are happy with the projects carried out. My main stack

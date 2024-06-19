@@ -12,7 +12,7 @@ export default function Provider({ children }: { children: React.ReactNode }) {
     <ActiveSectionProvider>
       <ThemeProvider
         attribute="class"
-        defaultTheme="system"
+        defaultTheme="light"
         enableSystem
         disableTransitionOnChange
       >
