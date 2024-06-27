@@ -2,7 +2,6 @@ import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ProjectType } from "@/lib/types";
 import { CircleCheck, Github, Globe } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { ImageCarousel } from "./image-carousel";
 

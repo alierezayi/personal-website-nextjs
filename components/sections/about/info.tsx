@@ -6,7 +6,7 @@ const Info = () => {
       {INFO.map((item, index) => (
         <div
           key={index}
-          className="flex-1 flex flex-col items-center gap-2 border py-4 rounded-lg"
+          className="flex-1 flex flex-col items-center gap-2 border py-4 px-2 rounded-lg"
         >
           <item.icon className="w-5" />
           <h1 className="text-sm font-medium">

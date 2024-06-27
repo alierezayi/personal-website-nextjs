@@ -64,7 +64,7 @@ export const FloatingNav = ({ className }: { className?: string }) => {
               setTimeOfLastClick(Date.now());
             }}
             className={cn(
-              "relative dark:text-white items-center flex text-neutral-700 dark:hover:text-neutral-300 hover:text-neutral-500 p-2 md:py-[9px] md:px-4",
+              "relative dark:text-white items-center flex text-neutral-700 p-2 md:py-[8px] md:px-4",
               navItem.name === activeSection && "text-black"
             )}
           >

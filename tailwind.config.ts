@@ -27,6 +27,7 @@ const config = {
       backgroundImage: {
         profile: "url(/alirezayi.jpg)",
         laptop: "url('/b1.svg')",
+        coding: "url('/18705.jpg')"
       },
       colors: {
         black: {

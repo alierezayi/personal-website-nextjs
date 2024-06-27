@@ -1,5 +1,5 @@
-import { ProjectCategoryType } from "@/lib/types";
 import { create } from "zustand";
+import { ProjectCategoryType } from "@/lib/types";
 
 interface ProjectCategoryState {
   category: ProjectCategoryType;

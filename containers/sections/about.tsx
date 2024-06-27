@@ -18,12 +18,8 @@ export default function About() {
       <SectionHeading>About Me</SectionHeading>
       <SectionSubTitle>My introduction</SectionSubTitle>
       <SectionContent className="flex flex-col md:flex-row items-center md:items-start gap-10 justify-between">
-        <Image
-          src={IMAGES.sections.intro.picture}
-          className="rounded-2xl"
-          width={350}
-          height={350}
-          alt=""
+        <div
+          className="rounded-2xl bg-coding bg-cover bg-center w-full md:max-w-[300px] lg:max-w-[350px] aspect-square"
         />
         <div className="w-full max-w-[520px]">
           <Info />
@@ -51,7 +47,7 @@ export default function About() {
               py-4 px-6 rounded-2xl w-fit 
               transition duration-500"
             >
-              Seen Github
+              View Github
               <Github className="w-5" />
             </Link>
           </div>

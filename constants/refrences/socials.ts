@@ -1,6 +1,5 @@
 import React from "react";
 import { LiaTelegramPlane } from "react-icons/lia";
-import { LuGithub } from "react-icons/lu";
 import { MdOutlineWhatsapp } from "react-icons/md";
 import { RiInstagramLine, RiLinkedinLine } from "react-icons/ri";
 import { RxDiscordLogo } from "react-icons/rx";

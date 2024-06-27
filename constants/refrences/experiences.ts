@@ -17,7 +17,7 @@ export const EXPERIENCES = [
     title: "Bachelor of Computer Engineering",
     location: "Kerman, IR",
     description:
-      "I am currently a computer engineering student at the non-profit Besat University of Kerman.  I am self-taught in the field of software engineering and learning programming.",
+      "I am currently a computer engineering student at the non-profit Besat University of Kerman.  I am self-taught in the field of programming.",
     icon: React.createElement(TbSchool),
     date: "2022 - present",
   },

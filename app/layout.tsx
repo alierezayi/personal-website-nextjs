@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Header from "@/containers/templates/header";
 import Footer from "@/containers/templates/footer";
 import Provider from "./provider";
-import "../styles/globals.css";
 import { FloatingNav } from "@/components/templates/global/floating-navbar";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  variable: "--font-poppins",
-  weight: ["300", "400", "500", "600", "700"],
-});
+import { poppins } from "@/configs/font";
+import "../styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Ali Rezaei | Front-End | React - Next.js",

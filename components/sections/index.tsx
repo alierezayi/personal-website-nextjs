@@ -23,7 +23,7 @@ function Section({ children, name, className }: SectionType) {
     <section
       ref={ref}
       id={name.toLowerCase()}
-      className={cn("pt-7 pb-20", className)}
+      className={cn("pt-7 pb-14 md:pb-20", className)}
     >
       {children}
     </section>
@@ -42,7 +42,7 @@ function SectionSubTitle({ children, className }: SectionHeadingType) {
   return (
     <h3
       className={cn(
-        "text-neutral-500 dark:text-gray-500 text-center text-xs mb-12 md:mb-20",
+        "text-neutral-500 dark:text-gray-500 text-center text-xs mb-12 md:mb-12",
         className
       )}
     >
@@ -52,7 +52,7 @@ function SectionSubTitle({ children, className }: SectionHeadingType) {
 }
 
 function SectionContent({ children, className }: SectionHeadingType) {
-  return <div className={cn("", className)}>{children}</div>;
+  return <div className={cn(className)}>{children}</div>;
 }
 
 function SectionDivider() {

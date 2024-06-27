@@ -8,7 +8,7 @@ function BgDot() {
         className="absolute pointer-events-none inset-0 flex
          items-center justify-center dark:bg-slate-950 bg-white
          [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
-      ></div>
+      />
     </div>
   );
 }
@@ -23,7 +23,7 @@ function BgGridSmall() {
         className="absolute pointer-events-none inset-0 flex
          items-center justify-centerdark:bg-slate-950 dark:bg-slate-950 bg-white
          [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
-      ></div>
+      />
     </div>
   );
 }

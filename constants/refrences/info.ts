@@ -9,7 +9,7 @@ export const INFO = [
   {
     icon: BriefcaseBusiness,
     title: "Experiences",
-    description: "2 + years",
+    description: "2+ years",
   },
   {
     icon: LaptopMinimal,

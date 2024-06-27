@@ -1,9 +1,6 @@
 import { ProjectCategoryType, ProjectType } from "@/lib/types";
-import { GrReactjs } from "react-icons/gr";
 import IMAGES from "../images";
-import { TbBrandNextjs } from "react-icons/tb";
 import { RiNextjsLine, RiReactjsLine } from "react-icons/ri";
-import { LiaReact } from "react-icons/lia";
 
 const BASE_GITHUB_URL = "https://github.com/alierezayi";
 
