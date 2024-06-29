@@ -31,7 +31,6 @@ export default function Projects() {
       <SectionContent>
         <Categories />
         <BentoGrid className="relative">
-          <BgGridSmall />
           {displayed.map((item, i) => (
             <BentoGridItem key={i} {...item} />
           ))}

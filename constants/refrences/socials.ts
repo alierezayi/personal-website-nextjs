@@ -7,27 +7,22 @@ import { RxDiscordLogo } from "react-icons/rx";
 export const SOCIALS = [
   {
     name: "instagram",
-    icon: React.createElement(RiInstagramLine),
+    icon: RiInstagramLine,
     href: "https://instagram.com/ali._rezaayi",
   },
   {
     name: "telegram",
-    icon: React.createElement(LiaTelegramPlane),
+    icon: LiaTelegramPlane,
     href: "https://t.me/ali_rezaayi",
   },
   {
     name: "linkedin",
-    icon: React.createElement(RiLinkedinLine),
+    icon: RiLinkedinLine,
     href: "https://linkedin.com/in/ali-rezaei-129414237",
   },
   {
     name: "discord",
-    icon: React.createElement(RxDiscordLogo),
+    icon: RxDiscordLogo,
     href: "https://discordapp.com/users/yourID/alirezayi",
-  },
-  {
-    name: "whatsapp",
-    icon: React.createElement(MdOutlineWhatsapp),
-    href: "https://api.whatsapp.com/send?phone=989916937150",
   },
 ] as const;

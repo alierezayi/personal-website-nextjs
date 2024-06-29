@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
-import { CircleCheck } from "lucide-react";
+import { Badge, CircleCheck, SquareCheck, Squircle } from "lucide-react";
+import { FaCircleCheck } from "react-icons/fa6";
 
 type SkillListType = {
   title: string;
@@ -18,9 +19,9 @@ export function SkillList({ title, children, className }: SkillListType) {
 
 export function SkillItem({ item }: { item: string }) {
   return (
-    <div className="flex gap-1 items-center">
-      <CircleCheck className="w-3.5" />
-      <span>{item}</span>
+    <div className="flex gap-1.5 items-center">
+      <Squircle className="w-3.5" />
+      <span className="font-medium">{item}</span>
     </div>
   );
 }
