@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
-import { Badge, CircleCheck, SquareCheck, Squircle } from "lucide-react";
-import { FaCircleCheck } from "react-icons/fa6";
+import { Squircle } from "lucide-react";
+
 
 type SkillListType = {
   title: string;
