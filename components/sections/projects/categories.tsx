@@ -26,7 +26,7 @@ export default function Categories() {
     <div className="flex justify-center items-center gap-5 mb-10">
       {CATEGORIES.map((cat, i) => (
         <Button
-          variant={cat === category ? "default" : "ghost"}
+          variant={cat === category ? "default" : "outline"}
           key={i}
           className={cn(
             "capitalize w-20",
