@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
-import { Switch } from "@/components/ui/switch";
 
 export function ModeToggle() {
   const { setTheme, theme } = useTheme();
