@@ -6,8 +6,6 @@ import {
 } from "@/components/sections";
 import { SkillItem, SkillList } from "@/components/sections/skills/skill-list";
 import { SKILLS } from "@/constants/refrences/skills";
-import LanguageBox from "@/components/sections/skills/language-box";
-import CodingBox from "@/components/sections/skills/coding-box";
 
 export default function Skills() {
   return (

@@ -12,7 +12,7 @@ export default function Contact() {
     <Section name="Contact">
       <SectionHeading>Contact</SectionHeading>
       <SectionSubTitle>Get in touch</SectionSubTitle>
-      <SectionContent className="flex flex-col md:flex-row justify-between">
+      <SectionContent className="flex gap-5 flex-col md:flex-row justify-between">
         <Info />
         <ContactForm />
       </SectionContent>

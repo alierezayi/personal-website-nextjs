@@ -66,7 +66,7 @@ export const BentoGridItem = ({
         <span className="text-neutral-600 dark:text-gray-400">
           <item.icon className="w-5 h-5" />
         </span>
-        <h2 className="font-semibold text-base text-neutral-600 dark:text-neutral-200 mb-2 mt-2 truncate">
+        <h2 className="font-semibold text-base mb-2 mt-2 truncate">
           {item.title}
         </h2>
         <div className="font-normal text-neutral-600 text-xs dark:text-neutral-300">

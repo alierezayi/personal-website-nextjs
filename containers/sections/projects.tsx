@@ -30,7 +30,7 @@ export default function Projects() {
       <SectionSubTitle>Most recent work</SectionSubTitle>
       <SectionContent>
         <Categories />
-        <BentoGrid className="relative">
+        <BentoGrid>
           {displayed.map((item, i) => (
             <BentoGridItem key={i} {...item} />
           ))}

@@ -12,4 +12,6 @@ export const projects = {
   ],
   musicPlayer: [require("@/assets/images/projects/music-player.png")],
   weblog: [require("@/assets/images/projects/weblog.png")],
+  adminDashboard: [require("@/assets/images/projects/admin-dashboard.png")],
+  productFiltering: [require("@/assets/images/projects/product-filtering.png")],
 };

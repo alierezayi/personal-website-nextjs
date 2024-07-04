@@ -41,10 +41,10 @@ export default function ProjectDialog({
             <div className="text-base">Deployment</div>
             <Link
               href={data.deployment}
-              className="flex items-center gap-2 text-neutral-500 dark:text-gray-400"
+              className="flex items-center gap-2 text-blue-600 dark:text-blue-400"
             >
               <Globe className="w-3.5" />
-              <div className="truncate max-w-[250px] md:max-w-fit">
+              <div className="truncate max-w-[300px] underline md:max-w-fit">
                 {data.deployment}
               </div>
             </Link>
@@ -53,10 +53,10 @@ export default function ProjectDialog({
             <div className="text-base">Source</div>
             <Link
               href={data.source}
-              className="flex items-center gap-2 text-neutral-500 dark:text-gray-400"
+              className="flex items-center gap-2 text-blue-600 dark:text-blue-400"
             >
               <Github className="w-3.5" />
-              <div className="truncate max-w-[250px] md:max-w-fit">
+              <div className="truncate max-w-[300px] underline md:max-w-fit">
                 {data.source}
               </div>
             </Link>

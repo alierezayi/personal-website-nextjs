@@ -12,7 +12,7 @@ export default function Social() {
            dark:hover:text-neutral-300 transition"
           target="_blank"
         >
-          <social.icon className="text-xl " />
+          <social.icon className="text-xl" />
         </Link>
       ))}
     </div>
