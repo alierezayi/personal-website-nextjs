@@ -27,7 +27,7 @@ const config = {
       backgroundImage: {
         profile: "url(/alirezayi.jpg)",
         laptop: "url('/b1.svg')",
-        coding: "url('/18705.jpg')"
+        coding: "url('/18705.jpg')",
       },
       colors: {
         black: {
@@ -85,6 +85,11 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "border-beam": {
+          "100%": {
+            "offset-distance": "100%",
+          },
+        },
         "scroll-down": {
           "0%": {
             transform: "translateY(0)",
@@ -170,6 +175,7 @@ const config = {
         },
       },
       animation: {
+        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
         "scroll-down": "scroll-down 2s ease infinite ",
         profile: "profile 8s ease-in-out infinite 1s",
         "accordion-down": "accordion-down 0.2s ease-out",

@@ -32,7 +32,7 @@ function Section({ children, name, className }: SectionType) {
 
 function SectionHeading({ children, className }: SectionHeadingType) {
   return (
-    <h1 className={cn("text-2xl font-medium text-center", className)}>
+    <h1 className={cn("text-3xl font-semibold text-center", className)}>
       {children}
     </h1>
   );

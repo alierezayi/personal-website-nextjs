@@ -27,11 +27,12 @@ export const FloatingNav = ({ className }: { className?: string }) => {
       if (scrollYProgress.get() < 0.05) {
         setVisible(false);
       } else {
-        if (direction < 0) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
+        // if (direction < 0) {
+        //   setVisible(true);
+        // } else {
+        //   setVisible(false);
+        // }
+        setVisible(true);
       }
     }
   });
@@ -51,7 +52,7 @@ export const FloatingNav = ({ className }: { className?: string }) => {
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit fixed top-5 inset-x-0 mx-auto border border-slate-200/50 dark:border-slate-800/50 rounded-full dark:bg-gray-800/80 bg-gray-200/70 z-30 items-center justify-center gap-5 md:gap-0 py-1 px-1.5 backdrop-blur",
+          "flex max-w-fit fixed top-5 inset-x-0 mx-auto rounded-2xl bg-neutral-200/80 dark:bg-secondary/80 z-30 items-center justify-center gap-5 md:gap-0 p-[3px] backdrop-blur",
           className
         )}
       >
@@ -64,16 +65,16 @@ export const FloatingNav = ({ className }: { className?: string }) => {
               setTimeOfLastClick(Date.now());
             }}
             className={cn(
-              "relative dark:text-white items-center flex text-neutral-700 p-2 md:py-[8px] md:px-4",
+              "relative dark:text-white items-center flex text-neutral-700 p-2 md:py-2.5 md:px-4",
               navItem.name === activeSection && "text-black"
             )}
           >
-            <navItem.icon className="block md:hidden z-10 w-5 h-5" />
+            <navItem.icon className="block z-10 size-5 md:size-4 mr-1" />
             <span className="hidden md:block z-10">{navItem.name}</span>
 
             {navItem.name === activeSection && (
               <motion.span
-                className="rounded-full absolute inset-0 z-0 border border-slate-300/50 bg-white/70 dark:bg-slate-950/80 dark:border-gray-800/50"
+                className="rounded-2xl absolute inset-0 z-0 bg-background"
                 layoutId="activeSection"
                 transition={{
                   type: "spring",

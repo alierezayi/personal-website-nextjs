@@ -1,6 +1,6 @@
+import { BorderBeam } from "@/components/ui/border-beam";
 import { cn } from "@/lib/utils";
 import { Squircle } from "lucide-react";
-
 
 type SkillListType = {
   title: string;
@@ -10,9 +10,10 @@ type SkillListType = {
 
 export function SkillList({ title, children, className }: SkillListType) {
   return (
-    <div className={cn("rounded-2xl px-10 py-10 border", className)}>
+    <div className={cn("rounded-2xl px-10 py-10 border relative", className)}>
       <h3 className="text-base font-semibold mb-7">{title}</h3>
       <div className="grid grid-cols-2 gap-x-5 gap-y-6">{children}</div>
+      <BorderBeam size={250} duration={20} delay={9} />
     </div>
   );
 }

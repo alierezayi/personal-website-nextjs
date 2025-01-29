@@ -1,41 +1,41 @@
 import {
-  BriefcaseBusiness,
-  Home,
-  Mail,
-  PanelsTopLeft,
-  SquareGanttChart,
-  UserRound,
-} from "lucide-react";
+  Home2,
+  Profile,
+  Magicpen,
+  Code,
+  MessageText,
+  Ranking,
+} from "iconsax-react";
 
 export const LINKS = [
   {
     name: "Home",
     hash: "#home",
-    icon: Home,
+    icon: Home2,
   },
   {
     name: "About",
     hash: "#about",
-    icon: UserRound,
+    icon: Profile,
   },
   {
     name: "Skills",
     hash: "#skills",
-    icon: SquareGanttChart,
+    icon: Magicpen,
   },
   {
     name: "Projects",
     hash: "#projects",
-    icon: PanelsTopLeft,
+    icon: Code,
   },
   {
     name: "Experience",
     hash: "#experience",
-    icon: BriefcaseBusiness,
+    icon: Ranking,
   },
   {
     name: "Contact",
     hash: "#contact",
-    icon: Mail,
+    icon: MessageText,
   },
 ];

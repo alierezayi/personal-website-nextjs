@@ -21,9 +21,10 @@ export default function HeaderNavbar() {
               setTimeOfLastClick(Date.now());
             }}
             className={cn(
-              "hover:text-black-200 dark:hover:text-white-200 transition"
+              "hover:text-black-200 dark:hover:text-white-200 transition flex items-center gap-1"
             )}
           >
+            <link.icon className="size-4" />
             {link.name}
           </Link>
         ))}
