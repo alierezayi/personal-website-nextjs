@@ -52,7 +52,7 @@ export const FloatingNav = ({ className }: { className?: string }) => {
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit fixed top-5 inset-x-0 mx-auto rounded-3xl bg-neutral-200/80 dark:bg-secondary/80 z-30 items-center justify-center gap-5 md:gap-0 p-[4px] backdrop-blur",
+          "flex max-w-fit fixed top-2 md:top-5 inset-x-0 mx-auto rounded-3xl bg-neutral-200/80 dark:bg-secondary/80 z-30 items-center justify-center gap-5 md:gap-0 p-[4px] backdrop-blur",
           className
         )}
       >
@@ -69,7 +69,7 @@ export const FloatingNav = ({ className }: { className?: string }) => {
               navItem.name === activeSection && "text-black"
             )}
           >
-            <navItem.icon className="block z-10 size-5 md:size-4 mr-1" />
+            <navItem.icon className="block z-10 size-5 md:size-4 md:mr-1" />
             <span className="hidden md:block z-10">{navItem.name}</span>
 
             {navItem.name === activeSection && (
