@@ -1,3 +1,4 @@
+import { Icon } from "iconsax-react";
 import { LucideIcon } from "lucide-react";
 
 export interface SubSkill {
@@ -9,7 +10,7 @@ export interface Skill {
   name: string;
   description: string;
   level: "Beginner" | "Intermediate" | "Advanced";
-  icon: string | LucideIcon;
+  icon: string | LucideIcon | Icon;
   subSkills?: SubSkill[];
 }
 

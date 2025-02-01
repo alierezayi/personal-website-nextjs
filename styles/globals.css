@@ -112,7 +112,7 @@
 }
 
 .scrollbar::-webkit-scrollbar {
-  @apply w-2.5;
+  @apply size-2.5;
 }
 
 .scrollbar::-webkit-scrollbar-track {

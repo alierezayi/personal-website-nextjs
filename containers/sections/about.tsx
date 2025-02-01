@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import IMAGES from "@/constants/images";
 import {
   Section,
   SectionContent,
@@ -11,7 +9,6 @@ import {
 import Link from "next/link";
 import { FileText, Github } from "lucide-react";
 import Info from "@/components/sections/about/info";
-import { Card } from "@/components/ui/card";
 import GitHubStats from "@/components/sections/about/github-calendar";
 
 export default function About() {
@@ -19,7 +16,7 @@ export default function About() {
     <Section name="About">
       <SectionHeading>About Me</SectionHeading>
       <SectionSubTitle>My introduction</SectionSubTitle>
-      <SectionContent>
+      <SectionContent className="space-y-14">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-10 justify-between">
           <div className="rounded-2xl bg-coding bg-cover bg-center w-full md:max-w-[300px] lg:max-w-[350px] aspect-square" />
           <div className="w-full max-w-[520px]">

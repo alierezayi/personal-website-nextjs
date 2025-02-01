@@ -20,6 +20,7 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { LucideIcon } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const container = {
   hidden: { opacity: 0 },
@@ -37,6 +38,16 @@ const item = {
 };
 
 export default function Skills() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
+
   return (
     <Section name="Skills" className="relative">
       <SectionHeading>Skills</SectionHeading>
@@ -67,7 +78,13 @@ export default function Skills() {
                     <Card className="transition-all duration-300 overflow-hidden bg-background/50 backdrop-blur-sm md:border-none shadow-none">
                       <CardHeader className="space-y-4">
                         <div className="flex items-center space-x-4">
-                          <div className="relative w-12 h-12 rounded-lg overflow-hidden bg-secondary dark:bg-muted/20 p-2 flex justify-center items-center">
+                          <div
+                            className={cn(
+                              "relative w-12 h-12 rounded-lg overflow-hidden p-2 flex justify-center items-center",
+                              typeof skill.icon !== "string" &&
+                                "bg-muted dark:bg-muted/50"
+                            )}
+                          >
                             {typeof skill.icon === "string" ? (
                               <Image
                                 src={skill.icon}
@@ -106,9 +123,9 @@ export default function Skills() {
                             {skill.subSkills.map((subSkill) => (
                               <div
                                 key={subSkill.name}
-                                className="flex items-center space-x-2 bg-muted/30 rounded-full px-3 py-1"
+                                className="flex items-center space-x-2 bg-muted/30 rounded-lg px-2 py-1"
                               >
-                                <div className="relative w-5 h-5">
+                                <div className="relative size-4">
                                   <Image
                                     src={subSkill.icon || "/placeholder.svg"}
                                     alt={subSkill.name}
@@ -116,7 +133,7 @@ export default function Skills() {
                                     className="object-contain"
                                   />
                                 </div>
-                                <span className="text-xs font-medium">
+                                <span className="text-xs font-">
                                   {subSkill.name}
                                 </span>
                               </div>

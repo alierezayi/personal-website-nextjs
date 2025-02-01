@@ -3,9 +3,20 @@
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun1 } from "iconsax-react";
+import React from "react";
 
 export function ModeToggle() {
   const { setTheme, theme } = useTheme();
+
+  const [isClient, setIsClient] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
 
   return (
     <div className="w-14 flex justify-end">

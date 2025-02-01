@@ -1,13 +1,15 @@
 import { SkillCategories } from "@/types/skills";
 import {
-  BarChart2,
-  Box,
-  Database,
-  Globe,
-  Library,
-  Move,
-  Palette,
-} from "lucide-react";
+  Brush,
+  CloudConnection,
+  Diagram,
+  Element3,
+  Global,
+  Hierarchy,
+  Play,
+  TableDocument,
+} from "iconsax-react";
+import { TECHNOLOGIES } from "@/constants/images/technologies";
 
 export const SKILLS: SkillCategories = {
   core: {
@@ -15,23 +17,28 @@ export const SKILLS: SkillCategories = {
     description: "Fundamental web development technologies",
     skills: [
       {
-        name: "HTML & CSS",
-        description:
-          "Semantic HTML5, CSS3 with modern features including Grid, Flexbox, and Animations",
+        name: "HTML",
+        description: "Semantic HTML5, Accessibility, SEO best practices",
         level: "Advanced",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+        icon: TECHNOLOGIES.html,
+      },
+      {
+        name: "CSS",
+        description: "CSS3, Flexbox, Grid, Animations, Responsive Design",
+        level: "Advanced",
+        icon: TECHNOLOGIES.css,
       },
       {
         name: "JavaScript",
         description: "ES6+, Async/Await, DOM Manipulation, Web APIs",
         level: "Advanced",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        icon: TECHNOLOGIES.javascript,
       },
       {
         name: "TypeScript",
         description: "Type safety, Interfaces, Generics, and Advanced Types",
         level: "Advanced",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        icon: TECHNOLOGIES.typescript,
       },
     ],
   },
@@ -44,43 +51,56 @@ export const SKILLS: SkillCategories = {
         description:
           "Hooks, Custom Hooks, Performance Optimization, React 18 features",
         level: "Advanced",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      },
-      {
-        name: "State Management",
-        description:
-          "Advanced state management solutions for React applications",
-        level: "Advanced",
-        icon: Database,
-        subSkills: [
-          {
-            name: "Redux Toolkit",
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
-          },
-          {
-            name: "Zustand",
-            icon: "https://docs.pmnd.rs/zustand/og-image.png",
-          },
-          {
-            name: "React Query",
-            icon: "https://react-query-v3.tanstack.com/_next/static/images/emblem-light-628080660fddb35787ff6c77e97ca43e.svg",
-          },
-          {
-            name: "SWR",
-            icon: "https://assets.vercel.com/image/upload/v1572282926/swr/twitter-card.jpg",
-          },
-          {
-            name: "Context API",
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-          },
-        ],
+        icon: TECHNOLOGIES.react,
       },
       {
         name: "Next.js",
         description:
           "App Router, Server Components, Server Actions, SSR, SSG, ISR, API Routes",
         level: "Advanced",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+        icon: TECHNOLOGIES.nextjs,
+      },
+      {
+        name: "Data Fetching",
+        description:
+          "Libraries and tools for efficient data fetching in React applications",
+        level: "Advanced",
+        icon: CloudConnection,
+        subSkills: [
+          {
+            name: "React Query",
+            icon: TECHNOLOGIES.reactQuery,
+          },
+          {
+            name: "SWR",
+            icon: TECHNOLOGIES.swr,
+          },
+          {
+            name: "Axios",
+            icon: TECHNOLOGIES.axios,
+          },
+        ],
+      },
+      {
+        name: "State Management",
+        description:
+          "Advanced state management solutions for React applications",
+        level: "Advanced",
+        icon: Hierarchy,
+        subSkills: [
+          {
+            name: "Redux Toolkit",
+            icon: TECHNOLOGIES.redux,
+          },
+          {
+            name: "Zustand",
+            icon: TECHNOLOGIES.zustand,
+          },
+          {
+            name: "Context API",
+            icon: TECHNOLOGIES.contextApi,
+          },
+        ],
       },
     ],
   },
@@ -92,23 +112,23 @@ export const SKILLS: SkillCategories = {
         name: "Styling Methods",
         description: "Various approaches to styling React applications",
         level: "Advanced",
-        icon: Palette,
+        icon: Brush,
         subSkills: [
           {
             name: "Tailwind CSS",
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+            icon: TECHNOLOGIES.tailwind,
           },
           {
             name: "CSS Modules",
-            icon: "https://raw.githubusercontent.com/css-modules/logos/master/css-modules-logo.png",
+            icon: TECHNOLOGIES.css,
           },
           {
             name: "Styled Components",
-            icon: "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
+            icon: TECHNOLOGIES.styledComponents,
           },
           {
             name: "CSS-in-JS",
-            icon: "https://miro.medium.com/v2/resize:fit:318/1*7jRD5QhgARucFKvRHFxpOg.png",
+            icon: TECHNOLOGIES.cssInJs,
           },
         ],
       },
@@ -117,27 +137,23 @@ export const SKILLS: SkillCategories = {
         description:
           "Component libraries and design systems for rapid UI development",
         level: "Advanced",
-        icon: Library,
+        icon: Element3,
         subSkills: [
           {
             name: "shadcn/ui",
-            icon: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4",
+            icon: TECHNOLOGIES.shadcnUi,
           },
           {
             name: "Material UI",
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+            icon: TECHNOLOGIES.mui,
           },
           {
             name: "Radix UI",
-            icon: "https://avatars.githubusercontent.com/u/75042455?s=200&v=4",
+            icon: TECHNOLOGIES.radixUi,
           },
           {
-            name: "Headless UI",
-            icon: "https://repository-images.githubusercontent.com/316012819/b7b19180-3f85-11eb-884c-1e19fd67a327",
-          },
-          {
-            name: "DaisyUI",
-            icon: "https://raw.githubusercontent.com/saadeghi/files/main/daisyui/logo-4.svg",
+            name: "Chakra UI",
+            icon: TECHNOLOGIES.chakraUi,
           },
         ],
       },
@@ -146,45 +162,66 @@ export const SKILLS: SkillCategories = {
         description:
           "Libraries and techniques for creating engaging animations",
         level: "Intermediate",
-        icon: Move,
+        icon: Play,
         subSkills: [
           {
             name: "Framer Motion",
-            icon: "https://cdn.worldvectorlogo.com/logos/framer-motion.svg",
+            icon: TECHNOLOGIES.framer,
           },
           {
             name: "GSAP",
-            icon: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg",
-          },
-          {
-            name: "Lottie",
-            icon: "https://avatars.githubusercontent.com/u/70762365?s=200&v=4",
+            icon: TECHNOLOGIES.gsap,
           },
         ],
       },
     ],
   },
+  backend: {
+    title: "APIs",
+    description: "Server-side technologies and API integration",
+    skills: [
+      {
+        name: "GraphQL",
+        description: "Schema definition, Queries, Mutations, Subscriptions",
+        level: "Beginner",
+        icon: TECHNOLOGIES.graphQl,
+      },
+      {
+        name: "REST API",
+        description:
+          "RESTful principles, API design, Integration with frontend",
+        level: "Advanced",
+        icon: TECHNOLOGIES.restApi,
+      },
+      {
+        name: "WebSocket",
+        description: "Real-time bidirectional communication, Socket.io",
+        level: "Intermediate",
+        icon: TECHNOLOGIES.websocket,
+      },
+    ],
+  },
   visualization: {
-    title: "Data Visualization",
-    description: "Charts, maps and graphics libraries",
+    title: "Data Visualization & Tables",
+    description: "Data Tables, Charts, maps and graphics libraries",
     skills: [
       {
         name: "Chart Libraries",
         description: "Libraries for creating interactive and responsive charts",
         level: "Advanced",
-        icon: BarChart2,
+        icon: Diagram,
         subSkills: [
           {
             name: "Recharts",
-            icon: "https://avatars.githubusercontent.com/u/20496644?s=200&v=4",
+            icon: TECHNOLOGIES.recharts,
           },
           {
             name: "Chart.js",
-            icon: "https://www.chartjs.org/img/chartjs-logo.svg",
+            icon: TECHNOLOGIES.chartJs,
           },
           {
             name: "TradingView Charts",
-            icon: "https://static.tradingview.com/static/images/logo-preview.png",
+            icon: TECHNOLOGIES.lightweight,
           },
           // {
           //   name: "D3.js",
@@ -201,11 +238,11 @@ export const SKILLS: SkillCategories = {
         description:
           "Libraries for creating interactive maps and geospatial visualizations",
         level: "Intermediate",
-        icon: Globe,
+        icon: Global,
         subSkills: [
           {
             name: "React Simple Maps",
-            icon: "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/logo.png",
+            icon: TECHNOLOGIES.reactSimpleMaps,
           },
           // {
           //   name: "Leaflet",
@@ -219,6 +256,19 @@ export const SKILLS: SkillCategories = {
           //   name: "OpenLayers",
           //   icon: "https://openlayers.org/theme/img/logo-dark.svg",
           // },
+        ],
+      },
+      {
+        name: "Data Tables",
+        description:
+          "Libraries for creating powerful and flexible data tables with filtering and sorting",
+        level: "Advanced",
+        icon: TableDocument,
+        subSkills: [
+          {
+            name: "TanStack Table",
+            icon: TECHNOLOGIES.tanstackTable,
+          },
         ],
       },
       // {
@@ -242,6 +292,34 @@ export const SKILLS: SkillCategories = {
       //     },
       //   ],
       // },
+    ],
+  },
+
+  versionControl: {
+    title: "Version Control",
+    description:
+      "Tools and platforms for managing code versions and collaboration",
+    skills: [
+      {
+        name: "Git",
+        description:
+          "Distributed version control system for tracking changes in source code",
+        level: "Advanced",
+        icon: TECHNOLOGIES.git,
+      },
+      {
+        name: "GitHub",
+        description: "Web-based hosting service for version control using Git",
+        level: "Advanced",
+        icon: TECHNOLOGIES.github,
+      },
+      {
+        name: "GitLab",
+        description:
+          "Web-based DevOps lifecycle tool that provides a Git-repository manager",
+        level: "Intermediate",
+        icon: TECHNOLOGIES.gitlab,
+      },
     ],
   },
 };
