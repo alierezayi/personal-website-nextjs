@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { cn } from "@/lib/utils";
-import Header from "@/containers/templates/header";
-import Footer from "@/containers/templates/footer";
 import Provider from "./provider";
-import { FloatingNav } from "@/components/templates/global/floating-navbar";
 import { poppins } from "@/configs/font";
 import "../styles/globals.css";
 
