@@ -5,11 +5,11 @@ import {
   SectionContent,
   SectionHeading,
   SectionSubTitle,
-} from "@/components/sections";
+} from "@/app/blog/components/layouts/section";
 import Link from "next/link";
 import { FileText, Github } from "lucide-react";
-import Info from "@/components/sections/about/info";
-import GitHubStats from "@/components/sections/about/github-calendar";
+import Info from "@/app/blog/components/sections/about/information-card";
+import GitHubStats from "@/app/blog/components/sections/about/contribution-card";
 import { Spotlight } from "@/components/ui/spotlight";
 
 export default function About() {

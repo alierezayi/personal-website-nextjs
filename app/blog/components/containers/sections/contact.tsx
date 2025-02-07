@@ -3,9 +3,9 @@ import {
   SectionContent,
   SectionHeading,
   SectionSubTitle,
-} from "@/components/sections";
-import ContactForm from "@/components/sections/contact/form";
-import Info from "@/components/sections/contact/info";
+} from "@/app/blog/components/layouts/section";
+import ContactForm from "@/app/blog/components/sections/contact/form";
+import Info from "@/app/blog/components/sections/contact/info";
 
 export default function Contact() {
   return (

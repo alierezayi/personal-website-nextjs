@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { BgDot } from "@/components/ui/backgrounds";
-import Social from "@/components/sections/intro/social";
-import ScrollDown from "@/components/sections/intro/scroll-down";
-import Details from "@/components/sections/intro/details";
+import Social from "@/app/blog/components/sections/intro/social";
+import ScrollDown from "@/app/blog/components/sections/intro/scroll-down";
+import Details from "@/app/blog/components/sections/intro/details";
 
 export default function Intro() {
   const [isClient, setIsClient] = useState(false);

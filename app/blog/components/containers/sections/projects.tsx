@@ -5,8 +5,8 @@ import {
   SectionContent,
   SectionHeading,
   SectionSubTitle,
-} from "@/components/sections";
-import { ProjectItem } from "@/components/sections/projects/project-item";
+} from "@/app/blog/components/layouts/section";
+import { ProjectItem } from "@/app/blog/components/sections/projects/project-item";
 import { PROJECTS } from "@/constants/refrences/projects";
 import { motion } from "framer-motion";
 

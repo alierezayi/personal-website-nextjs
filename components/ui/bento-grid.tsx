@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { IoIosExpand } from "react-icons/io";
-import ProjectDialog from "../sections/projects/project-dialog";
+import ProjectDialog from "../../app/blog/components/sections/projects/project-dialog";
 import { IconType } from "react-icons/lib";
 
 export const BentoGrid = ({

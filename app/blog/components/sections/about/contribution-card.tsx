@@ -1,4 +1,4 @@
-"use client"; // Next.js 13+ (if using App Router)
+"use client";
 
 import { Card, CardTitle } from "@/components/ui/card";
 import { useTheme } from "next-themes";
@@ -16,12 +16,12 @@ const GitHubStats = () => {
       <div className="">
         <Card className="p-5 w-full overflow-x-auto scrollbar">
           <GitHubCalendar
-            username="alierezayi" // Replace with your GitHub username
-            colorScheme={theme === "dark" ? "dark" : "light"} // Change to "light" if needed
-            blockSize={13} // Adjust the size of the squares
-            blockMargin={4} // Adjust spacing between blocks
-            fontSize={14} // Adjust text size
-            showWeekdayLabels={true} // Show weekday labels
+            username="alierezayi"
+            colorScheme={theme === "dark" ? "dark" : "light"}
+            blockSize={13}
+            blockMargin={4}
+            fontSize={14}
+            showWeekdayLabels={true}
           />
         </Card>
       </div>

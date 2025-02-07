@@ -3,26 +3,27 @@
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun1 } from "iconsax-react";
-import React from "react";
+import { useEffect, useState } from "react";
 
-export function ModeToggle() {
+export function ThemeToggle() {
   const { setTheme, theme } = useTheme();
 
-  const [isClient, setIsClient] = React.useState(false);
+  const [isClient, setIsClient] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setIsClient(true);
   }, []);
 
-  if (!isClient) {
-    return null;
-  }
+  if (!isClient) return null;
+
+  const light = () => setTheme("light");
+  const dark = () => setTheme("dark");
 
   return (
     <div className="w-14 flex justify-end">
       {theme === "dark" ? (
         <Button
-          onClick={() => setTheme("light")}
+          onClick={light}
           variant="ghost"
           size="icon"
           className="rounded-full"
@@ -31,7 +32,7 @@ export function ModeToggle() {
         </Button>
       ) : (
         <Button
-          onClick={() => setTheme("dark")}
+          onClick={dark}
           variant="ghost"
           size="icon"
           className="rounded-full"
@@ -39,7 +40,6 @@ export function ModeToggle() {
           <Moon className="h-[1.2rem] w-[1.2rem]" />
         </Button>
       )}
-      <span className="sr-only">Toggle theme</span>
     </div>
   );
 }

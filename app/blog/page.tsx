@@ -1,10 +1,9 @@
-import { BorderBeam } from "@/components/ui/border-beam";
-import About from "@/containers/sections/about";
-import Contact from "@/containers/sections/contact";
-import Experience from "@/containers/sections/experience";
-import Intro from "@/containers/sections/intro";
-import Projects from "@/containers/sections/projects";
-import Skills from "@/containers/sections/skills";
+import About from "@/app/blog/components/containers/sections/about";
+import Contact from "@/app/blog/components/containers/sections/contact";
+import Experience from "@/app/blog/components/containers/sections/experience";
+import Intro from "@/app/blog/components/containers/sections/intro";
+import Projects from "@/app/blog/components/containers/sections/projects";
+import Skills from "@/app/blog/components/containers/sections/skills";
 
 export default function BlogPage() {
   return (

@@ -5,11 +5,11 @@ import {
   SectionContent,
   SectionHeading,
   SectionSubTitle,
-} from "@/components/sections";
+} from "@/app/blog/components/layouts/section";
 import {
   VerticalTimeline,
   VerticalTimelineItem,
-} from "@/components/sections/experience/vertical-timeline";
+} from "@/app/blog/components/sections/experience/vertical-timeline";
 import { BgGridSmall } from "@/components/ui/backgrounds";
 import { EXPERIENCES } from "@/constants/refrences/experiences";
 

@@ -5,7 +5,7 @@ import {
   SectionContent,
   SectionHeading,
   SectionSubTitle,
-} from "@/components/sections";
+} from "@/app/blog/components/layouts/section";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -17,7 +17,7 @@ import {
 import { ShineBorder } from "@/components/ui/shine-border";
 import { SKILLS } from "@/constants/refrences/skills";
 import { cn } from "@/lib/utils";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { Icon } from "iconsax-react";
 import Image from "next/image";
 import { FC, useRef } from "react";
@@ -55,15 +55,20 @@ const SkillCard: FC<{ skill: Skill; index: number }> = ({ skill, index }) => {
     offset: ["start end", "center center"],
   });
 
-  const opacity = useTransform(scrollYProgress, [0, 0.75], [0, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
   const y = useTransform(scrollYProgress, [0, 0.5], [200, 0]);
+
+  const smoothY = useSpring(y, {
+    stiffness: 200,
+    damping: 15,
+  });
 
   return (
     <motion.div
       ref={ref}
       style={{
         opacity,
-        y,
+        y: smoothY,
       }}
     >
       <Card className="transition-all duration-300 overflow-hidden backdrop-blur-sm shadow-none h-full bg-muted/30 border-border/50">
