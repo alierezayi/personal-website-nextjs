@@ -127,8 +127,8 @@ export const SKILLS: SkillCategories = {
             icon: TECHNOLOGIES.styledComponents,
           },
           {
-            name: "CSS-in-JS",
-            icon: TECHNOLOGIES.cssInJs,
+            name: "SASS",
+            icon: TECHNOLOGIES.sass,
           },
         ],
       },
@@ -167,10 +167,6 @@ export const SKILLS: SkillCategories = {
           {
             name: "Framer Motion",
             icon: TECHNOLOGIES.framer,
-          },
-          {
-            name: "GSAP",
-            icon: TECHNOLOGIES.gsap,
           },
         ],
       },

@@ -1,134 +1,56 @@
-import { ProjectCategoryType, ProjectType } from "@/lib/types";
-import IMAGES from "../images";
-import { RiNextjsLine, RiReactjsLine } from "react-icons/ri";
+import { ProjectType } from "@/lib/types";
+import { TECHNOLOGIES } from "../images/technologies";
+import { Project } from "@/types/projects";
 
-const BASE_GITHUB_URL = "https://github.com/alierezayi";
-
-const vercelUrl = (name: string) => `https://${name}.vercel.app`;
-
-export const PROJECTS: ProjectType[] = [
+export const PROJECTS: Project[] = [
   {
-    title: "Shopping cart",
-    tag: "react",
-    icon: RiReactjsLine,
-    tecnologies: [
-      "TypeScript",
-      "React",
-      "Tailwind",
-      "Shadcn/ui",
-      "Redux",
-      "Axios",
-      "Context Api",
+    id: 1,
+    logo: "/images/logos/b2prop.png",
+    title: "B2PROP CRM (Trading Dashboard)",
+    coverImage: "",
+    description:
+      "UNFX Manager Prop by Unicorn Forex Broker (UNFXB) is a cutting-edge CRM dashboard designed to streamline the management of proprietary trading accounts. Empower your team with intuitive tools for efficient role management, real-time analytics, and seamless account operations.",
+    technologies: [
+      { name: "React", logo: TECHNOLOGIES.react },
+      { name: "TypeScript", logo: TECHNOLOGIES.typescript },
+      { name: "Next.js", logo: TECHNOLOGIES.nextjs },
+      { name: "Tailwind CSS", logo: TECHNOLOGIES.tailwind },
+      { name: "Shadcn/ui", logo: TECHNOLOGIES.shadcnUi },
     ],
-    images: IMAGES.sections.projects.store,
-    description: "",
-    features: [
-      "responsive",
-      "shoping cart",
-      "search for products",
-      "search optimization",
-      "filter by category",
-      "global error handling",
-      "using query params",
+    startDate: "01/05/2024",
+    endDate: "Present",
+    rewards: "EXPO Dubai Festival",
+    company: {
+      name: "Unicorn Forex Broker (UNFXCO)",
+      logo: "/images/logos/unfxco.png",
+      websiteLink: "https://unfxco.com/",
+      youtubeLink: "https://www.youtube.com/@UnicornBrokersGlobal",
+      youtubeBanner: "/images/projects/unfxco-banner.jpg",
+    },
+    websiteLink: "https://manager-prop.unicornbrokers.trade",
+    youtubeLink: "https://www.youtube.com/watch?v=uorT145_9GE",
+    sourceCode: "Private",
+    role: "Front-End Developer",
+    contributions:
+      "Developed the entire frontend codebase, implementing responsive designs and integrating real-time data fetching.",
+    teamMembers: [
+      {
+        name: "Ali Rezaei",
+        role: "Frontend",
+        avatar: "/alirezayi.jpg",
+      },
+      { name: "UNFXCO", role: "Backend", avatar: "/images/logos/unfxco.png" },
     ],
-    deployment: vercelUrl("shopping-cart-rjs"),
-    source: `${BASE_GITHUB_URL}/store-rjs`,
-  },
-  {
-    title: "Weblog",
-    tag: "next",
-    icon: RiNextjsLine,
-    tecnologies: [
-      "TypeScript",
-      "Next.js",
-      "Tailwind",
-      "Prisma",
-      "MongoDB",
-      "Swr",
+    keyFeatures: [
+      "Advanced charts and tables for data analysis",
+      "Real-time data fetching and updates",
+      "Responsive design for seamless mobile and desktop usage",
+      "Integration with multiple data sources for comprehensive trading insights",
     ],
-    images: IMAGES.sections.projects.weblog,
-    description: "",
-    features: [
-      "responsive",
-      "dark mode",
-      "realtime update comments of post",
-      "authentication using NextAuth",
-      "text editor for create post",
-    ],
-    deployment: vercelUrl("weblog-alirezayi"),
-    source: `${BASE_GITHUB_URL}/weblog-next.js`,
-  },
-  {
-    title: "Divar clone",
-    tag: "react",
-    icon: RiReactjsLine,
-    tecnologies: ["JavaScript", "React", "Tailwind", "React Query", "Axios"],
-    images: IMAGES.sections.projects.divar,
-    description: "",
-    features: [
-      "otp authentication",
-      "authorization and limit page access",
-      "cache fetching data using react query",
-      "handle admin role",
-      "upload files",
-    ],
-    deployment: vercelUrl("react-divar-clone"),
-    source: `${BASE_GITHUB_URL}/authentication-authorization-rjs`,
-  },
-  {
-    title: "Music player",
-    tag: "next",
-    icon: RiNextjsLine,
-
-    tecnologies: [
-      "React",
-      "TypeScript",
-      "Next.js",
-      "Tailwind",
-      "Prisma",
-      "MongoDB",
-      "swr",
-    ],
-    images: IMAGES.sections.projects.musicPlayer,
-    description: "",
-    features: [
-      "play - pause - next - previous",
-      "like songs",
-      "upload songs",
-      "search songs",
-    ],
-    deployment: vercelUrl("music-player-alirezayi"),
-    source: `${BASE_GITHUB_URL}/music-player-next.js`,
-  },
-  {
-    title: "Admin Dashboard",
-    tag: "next",
-    icon: RiNextjsLine,
-
-    tecnologies: ["TypeScript", "Next.js", "Tailwind", "Next Auth", "ChartJs"],
-    images: IMAGES.sections.projects.adminDashboard,
-    description: "",
-    features: [
-      "responsive",
-      "authentication with next-auth",
-      "charts and ribbons",
-      "rtl",
-    ],
-    deployment: vercelUrl("vue-dashboard-rtl"),
-    source: `${BASE_GITHUB_URL}/admin-dashboard-next.js`,
-  },
-  {
-    title: "Product Filtering",
-    tag: "react",
-    icon: RiReactjsLine,
-
-    tecnologies: ["React", "Query Params"],
-    images: IMAGES.sections.projects.productFiltering,
-    description: "",
-    features: ["filtering"],
-    deployment: vercelUrl("vue-dashboard-rtl"),
-    source: `${BASE_GITHUB_URL}/product-details-filtering-rjs`,
+    performanceMetrics: {
+      userEngagement: "85% user retention rate",
+      pageSpeed: "95/100 on Google PageSpeed Insights",
+      seoScore: "92/100 average SEO score",
+    },
   },
 ];
-
-export const CATEGORIES: Array<ProjectCategoryType> = ["all", "react", "next"];

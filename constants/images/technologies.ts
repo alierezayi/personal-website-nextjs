@@ -18,7 +18,7 @@ export const TECHNOLOGIES = {
   tailwind: "/images/technologies/tailwind.svg",
   cssModules: "/images/technologies/css-modules.webp",
   styledComponents: "/images/technologies/styled-components.webp",
-  cssInJs: "/images/technologies/javascript.svg",
+  sass: "/images/technologies/sass.svg",
 
   shadcnUi: "/images/technologies/shadcn.webp",
   radixUi: "/images/technologies/radix-ui.webp",

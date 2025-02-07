@@ -52,7 +52,7 @@ export const FloatingNav = ({ className }: { className?: string }) => {
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit fixed top-2 md:top-5 inset-x-0 mx-auto rounded-3xl bg-neutral-200/80 dark:bg-secondary/80 z-30 items-center justify-center gap-5 md:gap-0 p-[4px] backdrop-blur",
+          "flex max-w-fit fixed top-2 md:top-5 inset-x-0 mx-auto rounded-[15px] bg-neutral-200/80 dark:bg-secondary/80 z-30 items-center justify-center gap-5 md:gap-0 p-[3px] backdrop-blur",
           className
         )}
       >
@@ -74,7 +74,7 @@ export const FloatingNav = ({ className }: { className?: string }) => {
 
             {navItem.name === activeSection && (
               <motion.span
-                className="rounded-3xl absolute inset-0 z-0 bg-background"
+                className="rounded-xl absolute inset-0 z-0 bg-background"
                 layoutId="activeSection"
                 transition={{
                   type: "spring",

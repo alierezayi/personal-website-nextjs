@@ -10,13 +10,14 @@ import Link from "next/link";
 import { FileText, Github } from "lucide-react";
 import Info from "@/components/sections/about/info";
 import GitHubStats from "@/components/sections/about/github-calendar";
+import { Spotlight } from "@/components/ui/spotlight";
 
 export default function About() {
   return (
     <Section name="About">
       <SectionHeading>About Me</SectionHeading>
       <SectionSubTitle>My introduction</SectionSubTitle>
-      <SectionContent className="space-y-14">
+      <SectionContent className="space-y-14 relative">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-10 justify-between">
           <div className="rounded-2xl bg-coding bg-cover bg-center w-full md:max-w-[300px] lg:max-w-[350px] aspect-square" />
           <div className="w-full max-w-[520px]">

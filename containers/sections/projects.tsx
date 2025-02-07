@@ -6,35 +6,33 @@ import {
   SectionHeading,
   SectionSubTitle,
 } from "@/components/sections";
-import Categories from "@/components/sections/projects/categories";
-import { BgGridSmall } from "@/components/ui/backgrounds";
-import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
+import { ProjectItem } from "@/components/sections/projects/project-item";
 import { PROJECTS } from "@/constants/refrences/projects";
-import { filterProjects } from "@/helpers/project";
-import { useProjectCategory } from "@/hooks/useProjectCategory";
-import { ProjectType } from "@/lib/types";
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Projects() {
-  const { category } = useProjectCategory();
-  const [displayed, setDisplayed] = useState<ProjectType[]>(PROJECTS);
-
-  useEffect(() => {
-    const newItems = filterProjects(PROJECTS, category);
-    setDisplayed(newItems);
-  }, [category]);
-
   return (
     <Section name="Projects">
       <SectionHeading>Top Projects</SectionHeading>
       <SectionSubTitle>Most recent work</SectionSubTitle>
       <SectionContent>
-        <Categories />
-        <BentoGrid>
-          {displayed.map((item, i) => (
-            <BentoGridItem key={i} {...item} />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="container mx-auto px-4 grid grid-cols-1 gap-8"
+        >
+          {PROJECTS.map((project, index) => (
+            <motion.div
+              key={project.id}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <ProjectItem project={project} />
+            </motion.div>
           ))}
-        </BentoGrid>
+        </motion.div>
       </SectionContent>
     </Section>
   );

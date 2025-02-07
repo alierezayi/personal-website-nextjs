@@ -51,8 +51,16 @@ function SectionSubTitle({ children, className }: SectionHeadingType) {
   );
 }
 
-function SectionContent({ children, className }: SectionHeadingType) {
-  return <div className={cn(className)}>{children}</div>;
+function SectionContent({
+  children,
+  className,
+  ref
+}: {
+  children: React.ReactNode;
+  className?: string;
+  ref?: React.Ref<HTMLDivElement>;
+}) {
+  return <div ref={ref} className={cn(className)}>{children}</div>;
 }
 
 function SectionDivider() {
