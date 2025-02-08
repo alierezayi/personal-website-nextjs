@@ -40,7 +40,7 @@ export function ProjectItem({
         x: isDesktop ? x : 0,
         scale: isMobile ? scale : 1,
       }}
-      className="w-full rounded-2xl aspect-video relative overflow-hidden group"
+      className="w-full rounded-t-2xl aspect-video relative overflow-hidden group"
     >
       <div className="absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-background via-background/60 dark:via-black/60 to-transparent z-[1] transition-opacity duration-300" />
       <Image
@@ -89,6 +89,7 @@ export function ProjectItem({
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </motion.div>
