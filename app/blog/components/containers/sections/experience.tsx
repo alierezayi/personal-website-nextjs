@@ -10,8 +10,7 @@ import {
   VerticalTimeline,
   VerticalTimelineItem,
 } from "@/app/blog/components/sections/experience/vertical-timeline";
-import { BgGridSmall } from "@/components/ui/backgrounds";
-import { EXPERIENCES } from "@/constants/refrences/experiences";
+import { EXPERIENCES } from "@/app/blog/constants/data/experiences";
 
 export default function Experience() {
   return (

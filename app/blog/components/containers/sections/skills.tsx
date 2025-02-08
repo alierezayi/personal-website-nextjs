@@ -15,26 +15,27 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { ShineBorder } from "@/components/ui/shine-border";
-import { SKILLS } from "@/constants/refrences/skills";
+import { SKILLS } from "@/app/blog/constants/data/skills";
 import { cn } from "@/lib/utils";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { Icon } from "iconsax-react";
 import Image from "next/image";
 import { FC, useRef } from "react";
+import { Skill, SkillCategory } from "@/types/skills";
 
-type Skill = {
-  name: string;
-  icon: Icon;
-  level: "Advanced" | "Intermediate" | "Beginner";
-  description: string;
-  subSkills?: { name: string; icon?: string }[];
-};
+// type Skill = {
+//   name: string;
+//   icon: Icon;
+//   level: "Advanced" | "Intermediate" | "Beginner";
+//   description: string;
+//   subSkills?: { name: string; icon?: string }[];
+// };
 
-type SkillCategory = {
-  title: string;
-  description: string;
-  skills: Skill[];
-};
+// type SkillCategory = {
+//   title: string;
+//   description: string;
+//   skills: Skill[];
+// };
 
 type SkillsData = Record<string, SkillCategory>;
 
@@ -63,6 +64,9 @@ const SkillCard: FC<{ skill: Skill; index: number }> = ({ skill, index }) => {
     damping: 15,
   });
 
+  const imageUrl = typeof skill.icon === "string" ? skill.icon : "";
+  const icon = typeof skill.icon !== "string" ? skill.icon : undefined;
+
   return (
     <motion.div
       ref={ref}
@@ -82,16 +86,15 @@ const SkillCard: FC<{ skill: Skill; index: number }> = ({ skill, index }) => {
                   : "overflow-hidden"
               )}
             >
-              {typeof skill.icon === "string" ? (
+              {imageUrl && (
                 <Image
-                  src={skill.icon}
+                  src={typeof skill.icon === "string" ? skill.icon : ""}
                   alt={skill.name}
                   fill
                   className="object-contain"
                 />
-              ) : (
-                <skill.icon className="size-6 text-primary" />
               )}
+              {icon?.name && <icon.name className={cn("size-6", icon.color)} />}
             </div>
             <div>
               <CardTitle className="text-lg font-semibold">

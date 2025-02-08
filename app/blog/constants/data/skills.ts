@@ -5,11 +5,13 @@ import {
   Diagram,
   Element3,
   Global,
+  Grid3,
+  Grid5,
   Hierarchy,
   Play,
   TableDocument,
 } from "iconsax-react";
-import { TECHNOLOGIES } from "@/constants/images/technologies";
+import { TECHNOLOGIES } from "@/app/blog/constants/images/technologies";
 
 export const SKILLS: SkillCategories = {
   core: {
@@ -65,7 +67,10 @@ export const SKILLS: SkillCategories = {
         description:
           "Libraries and tools for efficient data fetching in React applications",
         level: "Advanced",
-        icon: CloudConnection,
+        icon: {
+          name: CloudConnection,
+          color: "text-blue-500",
+        },
         subSkills: [
           {
             name: "React Query",
@@ -86,7 +91,10 @@ export const SKILLS: SkillCategories = {
         description:
           "Advanced state management solutions for React applications",
         level: "Advanced",
-        icon: Hierarchy,
+        icon: {
+          name: Hierarchy,
+          color: "text-rose-500",
+        },
         subSkills: [
           {
             name: "Redux Toolkit",
@@ -112,7 +120,10 @@ export const SKILLS: SkillCategories = {
         name: "Styling Methods",
         description: "Various approaches to styling React applications",
         level: "Advanced",
-        icon: Brush,
+        icon: {
+          name: Brush,
+          color: "text-yellow-500",
+        },
         subSkills: [
           {
             name: "Tailwind CSS",
@@ -133,11 +144,14 @@ export const SKILLS: SkillCategories = {
         ],
       },
       {
-        name: "UI Libraries",
+        name: "UI/UX Design",
         description:
           "Component libraries and design systems for rapid UI development",
         level: "Advanced",
-        icon: Element3,
+        icon: {
+          name: Grid5,
+          color: "text-pink-500",
+        },
         subSkills: [
           {
             name: "shadcn/ui",
@@ -162,7 +176,10 @@ export const SKILLS: SkillCategories = {
         description:
           "Libraries and techniques for creating engaging animations",
         level: "Intermediate",
-        icon: Play,
+        icon: {
+          name: Play,
+          color: "text-green-500",
+        },
         subSkills: [
           {
             name: "Framer Motion",
@@ -198,14 +215,17 @@ export const SKILLS: SkillCategories = {
     ],
   },
   visualization: {
-    title: "Data Visualization & Tables",
+    title: "Data Visualization",
     description: "Data Tables, Charts, maps and graphics libraries",
     skills: [
       {
         name: "Chart Libraries",
         description: "Libraries for creating interactive and responsive charts",
         level: "Advanced",
-        icon: Diagram,
+        icon: {
+          name: Diagram,
+          color: "text-fuchsia-500",
+        },
         subSkills: [
           {
             name: "Recharts",
@@ -219,14 +239,6 @@ export const SKILLS: SkillCategories = {
             name: "TradingView Charts",
             icon: TECHNOLOGIES.lightweight,
           },
-          // {
-          //   name: "D3.js",
-          //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg",
-          // },
-          // {
-          //   name: "Apache ECharts",
-          //   icon: "https://echarts.apache.org/en/images/logo.png",
-          // },
         ],
       },
       {
@@ -234,60 +246,17 @@ export const SKILLS: SkillCategories = {
         description:
           "Libraries for creating interactive maps and geospatial visualizations",
         level: "Intermediate",
-        icon: Global,
+        icon: {
+          name: Global,
+          color: "text-cyan-500",
+        },
         subSkills: [
           {
             name: "React Simple Maps",
             icon: TECHNOLOGIES.reactSimpleMaps,
           },
-          // {
-          //   name: "Leaflet",
-          //   icon: "https://leafletjs.com/docs/images/logo.png",
-          // },
-          // {
-          //   name: "Mapbox GL",
-          //   icon: "https://static-assets.mapbox.com/branding/favicon/v1/favicon-32x32.png",
-          // },
-          // {
-          //   name: "OpenLayers",
-          //   icon: "https://openlayers.org/theme/img/logo-dark.svg",
-          // },
         ],
       },
-      {
-        name: "Data Tables",
-        description:
-          "Libraries for creating powerful and flexible data tables with filtering and sorting",
-        level: "Advanced",
-        icon: TableDocument,
-        subSkills: [
-          {
-            name: "TanStack Table",
-            icon: TECHNOLOGIES.tanstackTable,
-          },
-        ],
-      },
-      // {
-      //   name: "3D Visualization",
-      //   description:
-      //     "Libraries and technologies for 3D graphics and visualizations",
-      //   level: "Intermediate",
-      //   icon: Box,
-      //   subSkills: [
-      //     {
-      //       name: "Three.js",
-      //       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg",
-      //     },
-      //     {
-      //       name: "React Three Fiber",
-      //       icon: "https://docs.pmnd.rs/react-three-fiber/og-image.jpg",
-      //     },
-      //     {
-      //       name: "WebGL",
-      //       icon: "https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg",
-      //     },
-      //   ],
-      // },
     ],
   },
 

@@ -1,4 +1,4 @@
-import { LINKS } from "@/constants/refrences/links";
+import { LINKS } from "@/app/blog/constants/data/links";
 import { IconType } from "react-icons/lib";
 
 export type SectionName = (typeof LINKS)[number]["name"];

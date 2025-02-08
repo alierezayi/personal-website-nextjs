@@ -1,4 +1,4 @@
-import { SOCIALS } from "@/constants/refrences/socials";
+import { SOCIALS } from "@/app/blog/constants/data/socials";
 import Link from "next/link";
 
 function Footer() {
@@ -9,7 +9,11 @@ function Footer() {
         <span className="w-3 h-[1.5px] bg-gray-300 dark:bg-gray-500 rounded-full" />
         <div className="flex gap-5">
           {SOCIALS.map((social) => (
-            <Link href={social.href} key={social.name} className="hover:text-gray-500 transition">
+            <Link
+              href={social.href}
+              key={social.name}
+              className="hover:text-gray-500 transition"
+            >
               <social.icon className="text-base" />
             </Link>
           ))}

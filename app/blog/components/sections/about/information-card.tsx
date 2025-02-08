@@ -1,4 +1,4 @@
-import { INFO } from "@/constants/refrences/info";
+import { INFO } from "@/app/blog/constants/data/info";
 
 const Info = () => {
   return (

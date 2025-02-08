@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen mx-auto text-sm px-5 max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-5xl scrollbar antialiased",
+          "min-h-screen w-full overflow-x-hidden mx-auto text-sm px-5 max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-5xl scrollbar antialiased",
           poppins.className
         )}
       >

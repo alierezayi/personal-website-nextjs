@@ -10,7 +10,7 @@ export interface Skill {
   name: string;
   description: string;
   level: "Beginner" | "Intermediate" | "Advanced";
-  icon: string | LucideIcon | Icon;
+  icon: string | { color: string; name: Icon | LucideIcon };
   subSkills?: SubSkill[];
 }
 

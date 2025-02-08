@@ -1,4 +1,4 @@
-import { CONTACT } from "@/constants/refrences/contact";
+import { CONTACT } from "@/app/blog/constants/data/contact";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 

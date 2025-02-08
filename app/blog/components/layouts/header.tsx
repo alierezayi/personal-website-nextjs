@@ -1,13 +1,13 @@
 "use client";
 
-import { LINKS } from "@/constants/refrences/links";
+import { LINKS } from "@/app/blog/constants/data/links";
 import { useActiveSection } from "@/context/active-section-context";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
-import IMAGES from "@/constants/images";
+import IMAGES from "@/app/blog/constants/images";
 import { useEffect, useState } from "react";
 import { useSectionInView } from "@/hooks/useSectionInView";
 import { ThemeToggle } from "@/components/global/theme-toggle";

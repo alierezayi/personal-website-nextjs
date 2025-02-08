@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { LINKS } from "@/constants/refrences/links";
+import { LINKS } from "@/app/blog/constants/data/links";
 import { useActiveSection } from "@/context/active-section-context";
 
 export const FloatingNav = ({ className }: { className?: string }) => {

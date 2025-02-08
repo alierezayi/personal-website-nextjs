@@ -7,7 +7,7 @@ import {
   SectionSubTitle,
 } from "@/app/blog/components/layouts/section";
 import { ProjectItem } from "@/app/blog/components/sections/projects/project-item";
-import { PROJECTS } from "@/constants/refrences/projects";
+import { PROJECTS } from "@/app/blog/constants/data/projects";
 import { motion } from "framer-motion";
 
 export default function Projects() {
@@ -20,7 +20,7 @@ export default function Projects() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="container mx-auto px-4 grid grid-cols-1 gap-8"
+          className="w-full lg:max-w-[90%] mx-auto grid grid-cols-1 gap-20 relative"
         >
           {PROJECTS.map((project, index) => (
             <motion.div
@@ -29,7 +29,7 @@ export default function Projects() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <ProjectItem project={project} />
+              <ProjectItem project={project} index={index} />
             </motion.div>
           ))}
         </motion.div>
