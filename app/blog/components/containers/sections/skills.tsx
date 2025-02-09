@@ -59,7 +59,7 @@ const SkillCard: FC<{ skill: Skill; index: number }> = ({ skill, index }) => {
         y: smoothY,
       }}
     >
-      <Card className="transition-all duration-300 overflow-hidden backdrop-blur-sm shadow-none h-full bg-muted/70 border-border/70 dark:bg-muted/30 dark:border-border/50">
+      <Card className="transition-all duration-300 overflow-hidden backdrop-blur-sm shadow-none h-full dark:bg-muted/30 dark:border-border/50">
         <CardHeader className="space-y-4">
           <div className="flex items-center gap-4">
             <div
@@ -78,7 +78,7 @@ const SkillCard: FC<{ skill: Skill; index: number }> = ({ skill, index }) => {
                   className="object-contain"
                 />
               )}
-              {icon?.name && <icon.name className={cn("size-6 ",)} />}
+              {icon?.name && <icon.name className={cn("size-6 ",icon.color)} />}
             </div>
             <div>
               <CardTitle className="text-lg font-semibold">

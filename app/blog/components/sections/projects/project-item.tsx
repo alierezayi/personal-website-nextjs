@@ -51,20 +51,13 @@ export function ProjectItem({
       className="w-full shadow-2xl rounded-2xl aspect-video relative overflow-hidden group bg-muted dark:bg-background"
     >
       <div className="absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-background dark:via-black/60 to-transparent z-[2] transition-opacity duration-300" />
-      {/* <Image
-        src={project.coverImage}
-        alt={project.title}
-        fill
-        objectFit="cover"
-        className="object-cover transition-transform duration-300 group-hover:scale-105"
-      /> */}
       <ImageSlider
         animationType="fade"
         animationSpeed={0.5}
         images={project.images}
       />
       <div className="z-[3] absolute inset-0 p-4 md:p-8 flex flex-col justify-end gap-1 md:gap-6">
-        <div className="flex items-center gap-2 md:gap-4">
+        <div className="flex items-center gap-2 md:gap-4 group-hover:-translate-y-0 group-hover:translate-x-5 group-hover:scale-105 transition-transform duration-300">
           {project.logo && (
             <Image
               src={project.logo}
