@@ -122,7 +122,7 @@ export const SKILLS: SkillCategories = {
         level: "Advanced",
         icon: {
           name: Brush,
-          color: "text-yellow-500",
+          color: "text-fuchsia-500",
         },
         subSkills: [
           {
@@ -214,52 +214,51 @@ export const SKILLS: SkillCategories = {
       },
     ],
   },
-  visualization: {
-    title: "Data Visualization",
-    description: "Data Tables, Charts, maps and graphics libraries",
-    skills: [
-      {
-        name: "Chart Libraries",
-        description: "Libraries for creating interactive and responsive charts",
-        level: "Advanced",
-        icon: {
-          name: Diagram,
-          color: "text-fuchsia-500",
-        },
-        subSkills: [
-          {
-            name: "Recharts",
-            icon: TECHNOLOGIES.recharts,
-          },
-          {
-            name: "Chart.js",
-            icon: TECHNOLOGIES.chartJs,
-          },
-          {
-            name: "TradingView Charts",
-            icon: TECHNOLOGIES.lightweight,
-          },
-        ],
-      },
-      {
-        name: "Map Libraries",
-        description:
-          "Libraries for creating interactive maps and geospatial visualizations",
-        level: "Intermediate",
-        icon: {
-          name: Global,
-          color: "text-cyan-500",
-        },
-        subSkills: [
-          {
-            name: "React Simple Maps",
-            icon: TECHNOLOGIES.reactSimpleMaps,
-          },
-        ],
-      },
-    ],
-  },
-
+  // visualization: {
+  //   title: "Data Visualization",
+  //   description: "Data Tables, Charts, maps and graphics libraries",
+  //   skills: [
+  //     {
+  //       name: "Chart Libraries",
+  //       description: "Libraries for creating interactive and responsive charts",
+  //       level: "Advanced",
+  //       icon: {
+  //         name: Diagram,
+  //         color: "text-fuchsia-500",
+  //       },
+  //       subSkills: [
+  //         {
+  //           name: "Recharts",
+  //           icon: TECHNOLOGIES.recharts,
+  //         },
+  //         {
+  //           name: "Chart.js",
+  //           icon: TECHNOLOGIES.chartJs,
+  //         },
+  //         {
+  //           name: "TradingView Charts",
+  //           icon: TECHNOLOGIES.lightweight,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "Map Libraries",
+  //       description:
+  //         "Libraries for creating interactive maps and geospatial visualizations",
+  //       level: "Intermediate",
+  //       icon: {
+  //         name: Global,
+  //         color: "text-cyan-500",
+  //       },
+  //       subSkills: [
+  //         {
+  //           name: "React Simple Maps",
+  //           icon: TECHNOLOGIES.reactSimpleMaps,
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   versionControl: {
     title: "Version Control",
     description:

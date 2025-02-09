@@ -68,12 +68,12 @@ export function ProjectItem({
             />
           )}
           <div>
-            <CardTitle className="truncate flex-1 ">
+            <CardTitle className="truncate flex-1 leading-normal">
               <Link href={`/blog/projects/${project.slug}`}>
                 {project.title}
               </Link>
             </CardTitle>
-            <CardDescription className="text-foreground">
+            <CardDescription className="text-foreground hidden md:block">
               {project.role}
             </CardDescription>
           </div>
@@ -97,11 +97,11 @@ export function ProjectItem({
               </div>
             ))}
           </div>
-          <div className="-space-x-2">
+          <div className="-space-x-2 -mb-2">
             {project.teamMembers?.map((member) => (
               <TooltipProvider key={member.name}>
                 <Tooltip>
-                  <TooltipTrigger>
+                  <TooltipTrigger> 
                     <Avatar className="bg-secondary dark:bg-white border shadow size-6 md:size-8">
                       <AvatarImage src={member.avatar} alt={member.name} />
                       <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
