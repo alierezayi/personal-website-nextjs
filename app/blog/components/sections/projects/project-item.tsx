@@ -7,6 +7,14 @@ import { CardDescription, CardTitle } from "@/components/ui/card";
 import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import useDevice from "@/hooks/useDevice";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import ImageSlider from "./image-slider";
 
 export function ProjectItem({
   project,
@@ -40,17 +48,22 @@ export function ProjectItem({
         x: isDesktop ? x : 0,
         scale: isMobile ? scale : 1,
       }}
-      className="w-full rounded-t-2xl aspect-video relative overflow-hidden group"
+      className="w-full shadow-2xl rounded-2xl aspect-video relative overflow-hidden group bg-muted dark:bg-background"
     >
-      <div className="absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-background via-background/60 dark:via-black/60 to-transparent z-[1] transition-opacity duration-300" />
-      <Image
+      <div className="absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-background dark:via-black/60 to-transparent z-[2] transition-opacity duration-300" />
+      {/* <Image
         src={project.coverImage}
         alt={project.title}
         fill
         objectFit="cover"
         className="object-cover transition-transform duration-300 group-hover:scale-105"
+      /> */}
+      <ImageSlider
+        animationType="fade"
+        animationSpeed={0.5}
+        images={project.images}
       />
-      <div className="z-[2] absolute inset-0 p-4 md:p-8 flex flex-col justify-end gap-2 md:gap-10">
+      <div className="z-[3] absolute inset-0 p-4 md:p-8 flex flex-col justify-end gap-1 md:gap-6">
         <div className="flex items-center gap-2 md:gap-4">
           {project.logo && (
             <Image
@@ -62,15 +75,17 @@ export function ProjectItem({
             />
           )}
           <div>
-            <CardTitle className="truncate flex-1">
+            <CardTitle className="truncate flex-1 ">
               <Link href={`/blog/projects/${project.slug}`}>
                 {project.title}
               </Link>
             </CardTitle>
-            <CardDescription>{project.role}</CardDescription>
+            <CardDescription className="text-foreground">
+              {project.role}
+            </CardDescription>
           </div>
         </div>
-        <div>
+        <div className="flex items-end justify-between">
           <div className="flex items-center gap-4">
             {project.technologies.map((tech, i) => (
               <div
@@ -89,7 +104,25 @@ export function ProjectItem({
               </div>
             ))}
           </div>
-
+          <div className="-space-x-2">
+            {project.teamMembers?.map((member) => (
+              <TooltipProvider key={member.name}>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <Avatar className="bg-secondary dark:bg-white border shadow size-6 md:size-8">
+                      <AvatarImage src={member.avatar} alt={member.name} />
+                      <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
+                    </Avatar>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>
+                      {member.name}: {member.role}
+                    </p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            ))}
+          </div>
         </div>
       </div>
     </motion.div>

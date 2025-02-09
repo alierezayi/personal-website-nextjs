@@ -14,28 +14,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ShineBorder } from "@/components/ui/shine-border";
 import { SKILLS } from "@/app/blog/constants/data/skills";
 import { cn } from "@/lib/utils";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { Icon } from "iconsax-react";
 import Image from "next/image";
 import { FC, useRef } from "react";
 import { Skill, SkillCategory } from "@/types/skills";
-
-// type Skill = {
-//   name: string;
-//   icon: Icon;
-//   level: "Advanced" | "Intermediate" | "Beginner";
-//   description: string;
-//   subSkills?: { name: string; icon?: string }[];
-// };
-
-// type SkillCategory = {
-//   title: string;
-//   description: string;
-//   skills: Skill[];
-// };
 
 type SkillsData = Record<string, SkillCategory>;
 
@@ -75,7 +59,7 @@ const SkillCard: FC<{ skill: Skill; index: number }> = ({ skill, index }) => {
         y: smoothY,
       }}
     >
-      <Card className="transition-all duration-300 overflow-hidden backdrop-blur-sm shadow-none h-full bg-muted/30 border-border/50">
+      <Card className="transition-all duration-300 overflow-hidden backdrop-blur-sm shadow-none h-full bg-muted/70 border-border/70 dark:bg-muted/30 dark:border-border/50">
         <CardHeader className="space-y-4">
           <div className="flex items-center gap-4">
             <div
@@ -94,7 +78,7 @@ const SkillCard: FC<{ skill: Skill; index: number }> = ({ skill, index }) => {
                   className="object-contain"
                 />
               )}
-              {icon?.name && <icon.name className={cn("size-6", icon.color)} />}
+              {icon?.name && <icon.name className={cn("size-6 ",)} />}
             </div>
             <div>
               <CardTitle className="text-lg font-semibold">
@@ -113,12 +97,12 @@ const SkillCard: FC<{ skill: Skill; index: number }> = ({ skill, index }) => {
               </Badge>
             </div>
           </div>
-          <CardDescription className="text-sm text-muted-foreground">
+          <CardDescription className="text-sm text-muted-foreground truncate md:overflow-visible md:whitespace-normal">
             {skill.description}
           </CardDescription>
         </CardHeader>
         {skill.subSkills && (
-          <CardContent>
+          <CardContent className="hidden md:block">
             <div className="flex flex-wrap gap-2">
               {skill.subSkills.map((subSkill) => (
                 <SubSkillBadge key={subSkill.name} subSkill={subSkill} />

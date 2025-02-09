@@ -4,7 +4,7 @@ export interface Project {
   title: string;
   logo?: string;
   coverImage: string;
-  images?: string[];
+  images: string[];
   description: string;
   technologies: { name: string; logo: string }[];
   startDate: string;
