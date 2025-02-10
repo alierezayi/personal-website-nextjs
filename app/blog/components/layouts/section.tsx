@@ -23,7 +23,7 @@ function Section({ children, name, className }: SectionType) {
     <section
       ref={ref}
       id={name.toLowerCase()}
-      className={cn("pt-7 pb-14 md:pb-20", className)}
+      className={cn("pt-7 pb-14 md:pb-32", className)}
     >
       {children}
     </section>
