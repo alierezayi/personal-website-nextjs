@@ -114,7 +114,7 @@ function TimelineItem({ item }: { item: TimelineEntry }) {
         </div>
       </div>
 
-      <div className="relative pl-20 pr-4 md:pl-4 w-full">
+      <div className="relative pl-16 pr-4 md:pl-4 w-full">
         <div>
           <div className="md:hidden block text-neutral-500 dark:text-neutral-500 mb-4">
             <h3 className="text-xl text-left font-bold">
