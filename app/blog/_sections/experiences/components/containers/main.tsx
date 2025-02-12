@@ -40,10 +40,10 @@ const data: TimelineEntry[] = [
             <span className="italic">Front-End Developer</span>
           </p>
         </div>
-        <div className="mt-10">
+        <div className="mt-4">
           <div>
-            <div className="flex items-center gap-3">
-              <Image src={LOGOES.b2prop} width={30} height={30} alt="" />
+            <div className="flex items-center gap-2">
+              <Image src={LOGOES.b2prop} width={20} height={20} alt="" />
               <LinkPreview
                 url="https://manager-prop.unfxco.com"
                 className="text-base font-semibold"
