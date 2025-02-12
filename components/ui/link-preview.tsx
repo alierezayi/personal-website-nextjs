@@ -11,6 +11,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { useTheme } from "next-themes";
 
 type LinkPreviewProps = {
   children: React.ReactNode;
@@ -36,6 +37,7 @@ export const LinkPreview = ({
   isStatic = false,
   imageSrc = "",
 }: LinkPreviewProps) => {
+  const { theme } = useTheme();
   let src;
   if (!isStatic) {
     const params = encode({
@@ -43,7 +45,7 @@ export const LinkPreview = ({
       screenshot: true,
       meta: false,
       embed: "screenshot.url",
-      colorScheme: "dark",
+      colorScheme: theme === "dark" ? "dark" : "light",
       "viewport.isMobile": true,
       "viewport.deviceScaleFactor": 1,
       "viewport.width": width * 3,

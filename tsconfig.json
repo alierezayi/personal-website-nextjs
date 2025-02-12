@@ -26,7 +26,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/blog/components/sections/about/information-card.tsx"
+    "app/blog/_sections/about/components/cards/information.tsx"
   ],
   "exclude": ["node_modules"]
 }
